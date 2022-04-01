@@ -1,0 +1,83 @@
+---
+settings:
+  name: Global File Cache
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: zh-cn,us-en,ja-jp,ko-kr
+sidebar:
+  entries:
+  - title: 所有 Cloud Manager 文档
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: 全局文件缓存文档
+    url: "/index.html"
+  - title: 发行说明
+    entries:
+    - title: 新增功能
+      url: "/whats-new.html"
+    - title: 已修复的问题
+      url: "/fixed-issues.html"
+  - title: 入门
+    entries:
+    - title: 了解全局文件缓存
+      url: "/concept-gfc.html"
+    - title: 全局文件缓存前提条件
+      url: "/concept-before-you-begin-to-deploy-gfc.html"
+    - title: 部署并许可全局文件缓存
+      url: "/task-gfc-getting-started.html"
+    - title: 全局文件缓存边缘前提条件
+      url: "/download-gfc-resources.html"
+    - title: 部署全局文件缓存边缘
+      url: "/task-deploy-gfc-edge-instances.html"
+  - title: 使用全局文件缓存
+    entries:
+    - title: 最终用户培训
+      url: "/concept-gfc-enduser-training.html"
+    - title: 追加信息
+      url: "/reference-gfc-additional-information.html"
+  - title: 知识和支持
+    entries:
+    - title: 注册以获得支持
+      url: "/task-support-registration.html"
+    - title: 获取帮助
+      url: "/task-get-help.html"
+  - title: 法律声明
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 入门
+    links:
+    - title: 了解全局文件缓存
+      url: concept-gfc.html
+    - title: 新增功能
+      url: whats-new.html
+    - title: 限制
+      url: concept-gfc.html#limitations
+  - title: 部署组件
+    links:
+    - title: 将 Cloud Volumes ONTAP 部署为存储平台
+      url: task-gfc-getting-started.html#deploy-cloud-volumes-ontap-as-your-storage-platform
+    - title: 部署全局文件缓存管理服务器和全局文件缓存核心
+      url: task-gfc-getting-started.html#enable-global-file-cache-in-your-working-environment
+    - title: 部署全局文件缓存边缘实例
+      url: task-deploy-gfc-edge-instances.html
+  - title: 培训用户
+    links:
+    - title: 最终用户培训
+      url: concept-gfc-enduser-training.html
+  - title: 博客社区
+    links:
+    - title: NetApp 社区
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central 博客
+      url: https://cloud.netapp.com/blog
+    - title: 云网络研讨会
+      url: https://cloud.netapp.com/events
+  - title: 其他资源
+    links:
+    - title: Cloud Central 用例
+      url: https://cloud.netapp.com/global-file-cache
+product-family: {}

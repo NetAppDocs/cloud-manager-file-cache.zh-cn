@@ -1,0 +1,72 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, gfc, global file cache' 
+summary: 了解全局文件缓存中的新增功能。 
+---
+= 全局文件缓存的新增功能
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解全局文件缓存中的新增功能。
+
+
+
+== 2021 年 12 月 17 日（版本 1.2.0 ）
+
+
+
+=== OpenSSL 模块已升级到 1.1.1l 版。
+
+这是最新版本，更安全。此模块用于在 GFC Edge 和 GFC 核心之间进行安全通信。
+
+
+
+=== 日志记录基础架构已得到增强。
+
+
+
+== 2021 年 6 月 9 日（版本 1.1.0 ）
+
+
+
+=== 已添加 " 边缘同步 " 功能。
+
+此功能可使远程办公室的多个边缘保持同步，并且数据始终处于缓存 / 预热状态。在一个 Edge 上刷新 / 提取文件时，将更新和缓存参与 Edge Sync 的所有边缘上的同一文件。请参见中的第 8.4 节 https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^] 了解详细信息。
+
+
+
+=== OpenSSL 模块已升级到 1.1.1k 版。
+
+这是最新版本，更安全。此模块用于在 GFC Edge 和 GFC 核心之间进行安全通信。
+
+
+
+=== 已更新许可证注册页面。
+
+现在， GFC 许可证注册页面将显示通过 NetApp 订阅激活的许可证数量。
+
+
+
+== 2021 年 3 月 21 日（ 1.0.3 版）
+
+
+
+=== 软件安装程序会更新，以自动从 Windows Defender 中排除 GFC 进程。
+
+现在，全局文件缓存软件安装程序会将所有 GFC 进程排除在 Windows Defender 软件按需扫描之外。
+
+
+
+=== 已向配置控制台添加一个新的策略配置选项卡。
+
+通过此配置选项卡，您可以从 GFC 核心添加预填充作业。
+
+
+
+=== 增强了软件功能，可减少内存使用量，同时提高性能和稳定性。

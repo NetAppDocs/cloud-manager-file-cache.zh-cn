@@ -1,0 +1,537 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blocks>
+  <block id="58f57692df8741b4af1f9f288c57dcfa" category="summary">使用以下链接可了解有关全局文件缓存和其他 NetApp 产品的更多信息。</block>
+  <block id="0f68b904e33d9ac04605aecc958bcf52" category="doc">追加信息</block>
+  <block id="8826299bdde67043ef3cc9a0b306ee56" category="paragraph">使用以下链接可了解有关全局文件缓存和其他 NetApp 产品的更多信息：</block>
+  <block id="a5b9ae89457868d250c6634258da66a5" category="list-text">全局文件缓存常见问题解答</block>
+  <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link-macro">此处</block>
+  <block id="9da15b0ec3a63afcb01d7f2726c42994" category="list-text">查看常见问题解答列表 <block ref="19a12809be10088b3860ea30b7a5724d" category="inline-link-macro-rx"></block></block>
+  <block id="15b783a23e5291e1ffb9f638317d4bcb" category="inline-link">《 NetApp 全局文件缓存用户指南》</block>
+  <block id="26dbf4bee42458d4736cd9fd8e959fc6" category="list-text"><block ref="26dbf4bee42458d4736cd9fd8e959fc6" category="inline-link-rx"></block></block>
+  <block id="bc4fe2352063642d68529f2aa0ca7ca3" category="list-text">NetApp 产品文档</block>
+  <block id="1b28ae1c9b0f1461cf0ea5fa195be216" category="list-text">请参见有关 NetApp 云产品的其他文档<block ref="0510c3621321be434699160c80a14647" category="inline-link-rx"></block></block>
+  <block id="1acb7294e54390a8c41c4c19b14f4c46" category="list-text">请参见所有 NetApp 产品的其他文档<block ref="01463e984d77180cbd9edcf8c8c1f237" category="inline-link-rx"></block></block>
+  <block id="e47d1e4074d2e9ecb5a92499549efe85" category="list-text">可通过以下渠道为使用 Cloud Volumes ONTAP 的全局文件缓存用户提供客户支持：</block>
+  <block id="fd3e064f15a5332c54fff40bd465efef" category="list-text">引导式问题解决，案例管理，知识库，下载，工具， 等等 <block ref="47f87a52a4a366c07eaa3494febfbcd2" category="inline-link-macro-rx"></block></block>
+  <block id="d41d8cd98f00b204e9800998ecf8427e" category="inline-link"></block>
+  <block id="2d586fed9d23ea26489008f327e1394f" category="list-text">登录到 NetApp 支持部门，网址为<block ref="4ae7ca7e30d53354eb9b40e218393b2c" category="inline-link-rx"></block> 使用您的 NSS 凭据</block>
+  <block id="bd409d83b208b51683f34be90cb2a669" category="list-text">要获得 P1 问题描述呼叫的即时帮助，请拨打： +1 856.481.3990 （选项 2 ）</block>
+  <block id="9a036c7eaca0f0813d22bd59bd333dc4" category="list-text">您的提供商可通过标准支持为使用 Cloud Volumes Services 和 Azure NetApp Files 的全局文件缓存用户提供客户支持。请分别联系 Google 客户支持或 Microsoft 客户支持。</block>
+  <block id="3b8fedc1b41b6f7a3619ff96f76571cf" category="summary">您可以使用 Cloud Manager 在工作环境中部署全局文件缓存管理服务器和全局文件缓存核心软件。</block>
+  <block id="cb59b87e00d11222bfd9159d0d23836f" category="doc">入门</block>
+  <block id="191f6a6f9751dafdeae2307eac2e588e" category="section-title">使用 Cloud Manager 启用全局文件缓存</block>
+  <block id="7f619c805ea91cbd4bad99a0259dc84f" category="paragraph">在此配置中，您将在使用 Cloud Manager 创建 Cloud Volumes ONTAP 系统的同一工作环境中部署全局文件缓存管理服务器和全局文件缓存核心。</block>
+  <block id="201e09e85ad81db8a19ef9f20c05d1a5" category="inline-link-macro">此视频</block>
+  <block id="81b4cc67e8f60e41997293efceba160b" category="paragraph">观看 <block ref="182ef5a05e7c682b0210b8852ec20646" category="inline-link-macro-rx"></block> 以查看从开始到结束的步骤。</block>
+  <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">快速入门</block>
+  <block id="990f23665d21283cae7ae6a6366d2e03" category="paragraph">按照以下步骤快速入门，或者向下滚动到其余部分以了解完整详细信息。</block>
+  <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="inline-link">在 Azure 中启动 Cloud Volumes ONTAP</block>
+  <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">在 AWS 中启动 Cloud Volumes ONTAP</block>
+  <block id="37f4de68e5e319c54c0137e56b4d261d" category="paragraph">在 Azure 或 AWS 中部署 Cloud Volumes ONTAP 并配置 SMB 文件共享。有关详细信息，请参见<block ref="e515c0e95325e358a799acebafdf6235" category="inline-link-rx"></block> 或<block ref="497bfdbba9caf2f6a6f7d799eda40dc3" category="inline-link-rx"></block>。</block>
+  <block id="0877004cfc484438f5a264dde3bb7914" category="paragraph">在与 Cloud Volumes ONTAP 实例相同的工作环境中部署全局文件缓存管理服务器的实例。</block>
+  <block id="0e7c4b1d0864abab13fd8a086a179f5b" category="paragraph">在与 Cloud Volumes ONTAP 实例相同的工作环境中部署全局文件缓存核心的一个或多个实例，并将其加入到 Active Directory 域中。</block>
+  <block id="de06dbc0084bf6af6184289f308be0a6" category="paragraph">在全局文件缓存核心实例上配置全局文件缓存许可证管理服务器（ LMS ）服务。要激活您的订阅，您需要使用您的 NSS 凭据或 NetApp 提供的客户 ID 和订阅编号。</block>
+  <block id="175d4a7fba1f2c02d227a7916d20ff9d" category="inline-link-macro">部署全局文件缓存边缘实例</block>
+  <block id="2cfe745a33e154bc52d27ca9c658682b" category="paragraph">请参见 <block ref="14014d518c33fe634be510ffd082f6e6" category="inline-link-macro-rx"></block> 在每个远程位置部署全局文件缓存边缘实例。此步骤不能使用 Cloud Manager 完成。</block>
+  <block id="7be40d2cd621549d68e8fff4ffead179" category="section-title">将 Cloud Volumes ONTAP 部署为您的存储平台</block>
+  <block id="679690d1daf36392f2889211bd47240c" category="paragraph">在当前版本中，全局文件缓存支持在 Azure 或 AWS 中部署 Cloud Volumes ONTAP 。有关详细的前提条件，要求和部署说明，请参见<block ref="e515c0e95325e358a799acebafdf6235" category="inline-link-rx"></block> 或<block ref="497bfdbba9caf2f6a6f7d799eda40dc3" category="inline-link-rx"></block>。</block>
+  <block id="670790b206f952300b65bfcba3f18571" category="paragraph">请注意以下其他全局文件缓存要求：</block>
+  <block id="d0b9898fe413c415608114643e2b6efc" category="list-text">您应在 Cloud Volumes ONTAP 实例上配置 SMB 文件共享。</block>
+  <block id="86614028aa6f6a8ad4a9981386bd50bc" category="paragraph">如果实例上未设置 SMB 文件共享，则在安装全局文件缓存组件期间，系统会提示您配置 SMB 共享。</block>
+  <block id="13f756e644ce8510c63aaeff2379612b" category="section-title">在您的工作环境中启用全局文件缓存</block>
+  <block id="03dfe15c10ab0f6add8d3d326b9e825b" category="paragraph">全局文件缓存向导将引导您完成部署全局文件缓存管理服务器实例和全局文件缓存核心实例的步骤，如下所示。</block>
+  <block id="3a46ee0eb70616fcb7b7c654926a9543" category="inline-image-macro">初始全局文件缓存安装页面的屏幕截图。</block>
+  <block id="f1cadc3110a9efb59db7b2cc7bf3dead" category="paragraph"><block ref="f1cadc3110a9efb59db7b2cc7bf3dead" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步骤</block>
+  <block id="b61032810c3dc3333168d75ab853e222" category="list-text">选择部署 Cloud Volumes ONTAP 的工作环境。</block>
+  <block id="565f2d86523cd15edd1eb97a60b2332b" category="list-text">在服务面板中，单击 * 启用 GFC* 。</block>
+  <block id="d71b2778fb533cf8a4008ff64210b48d" category="inline-image-macro">工作环境中用于启用全局文件缓存的初始启用 GFC 按钮的屏幕截图。</block>
+  <block id="0cbbb29ea919eddc4b25ef45690d202f" category="paragraph"><block ref="0cbbb29ea919eddc4b25ef45690d202f" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1e408f6922ab52afed30bf9f3fd18a98" category="list-text">阅读概述页面，然后单击 * 继续 * 。</block>
+  <block id="3c96cc9fcb38b9efb7ce7ced8d1aa073" category="inline-link-macro">存储平台</block>
+  <block id="2ddf0a5413911c8c522b1bb2dbbc2a38" category="list-text">如果 Cloud Volumes ONTAP 实例上没有可用的 SMB 共享，系统将提示您输入 SMB 服务器和 SMB 共享详细信息以立即创建共享。有关 SMB 配置的详细信息，请参见 <block ref="7b874b389af49bd37b4d4f24aa0d8f0d" category="inline-link-macro-rx"></block>。</block>
+  <block id="07e6022a350412b0d38723f6c0553658" category="paragraph">完成后，单击 * 继续 * 以创建 SMB 共享。</block>
+  <block id="9bd4f7e64b7c6543ad22515f64db1b01" category="inline-image-macro">一个屏幕截图，显示在 SMB 共享不可用时创建 SMB 共享所需的信息。</block>
+  <block id="c510089405fb065c62a7ed30808c3a4c" category="paragraph"><block ref="c510089405fb065c62a7ed30808c3a4c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="inline-link-macro">前提条件</block>
+  <block id="2175de844bbfb8a1e195b989b54ba612" category="list-text">在全局文件缓存服务页面上，输入计划部署的全局文件缓存边缘实例的数量，然后确保您的系统满足网络配置和防火墙规则， Active Directory 设置和防病毒排除的要求。请参见 <block ref="391182c9255c8914347b7e13351c1a63" category="inline-link-macro-rx"></block> 有关详细信息：</block>
+  <block id="fa10fd38af8edc4beee6be041e3cf6f9" category="inline-image-macro">显示部署全局文件缓存管理服务器和核心实例之前的前提条件的屏幕截图。</block>
+  <block id="adddcebfda336f16948cb1c5be4bb5c2" category="paragraph"><block ref="adddcebfda336f16948cb1c5be4bb5c2" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b7058a71800a15389821662470e7ae9b" category="list-text">确认已满足要求或您已获得满足这些要求的信息后，单击 * 继续 * 。</block>
+  <block id="002774556a6a12817ad3839127d64fbc" category="list-text">输入用于访问全局文件缓存管理服务器虚拟机的管理员凭据，然后单击 * 启用 GFC 服务 * 。对于 Azure ，请以用户名和密码的形式输入凭据；对于 AWS ，请选择相应的密钥对。您可以根据需要更改 VM/ 实例名称。</block>
+  <block id="8032f6f6b67e256816351d404b3f1e9c" category="inline-image-macro">显示设置全局文件缓存管理服务器所需配置信息的屏幕截图。</block>
+  <block id="4b03fed08ad52898d40ce5e286858a6e" category="paragraph"><block ref="4b03fed08ad52898d40ce5e286858a6e" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d8c5dd4a84baf4a84163425c3af2f194" category="list-text">成功部署全局文件缓存管理服务后，单击 * 继续 * 。</block>
+  <block id="43360b9eb4ee811e5fef8b7982fa0219" category="list-text">对于全局文件缓存核心，输入要加入 Active Directory 域的管理员用户凭据以及服务帐户用户凭据。然后单击 * 继续 * 。</block>
+  <block id="8d568c1dc64f8fb96bf720ba1b85111c" category="list-text">全局文件缓存核心实例必须部署在与 Cloud Volumes ONTAP 实例相同的 Active Directory 域中。</block>
+  <block id="c996fbb43976c45057849f97d91482c5" category="list-text">此服务帐户是域用户，它是 Cloud Volumes ONTAP 实例上 BUILTIN\Backup Operators 组的一部分。</block>
+  <block id="3d114fb7f76c45d222b5fa52c8755f9b" category="inline-image-macro">显示设置全局文件缓存核心活动目录和服务帐户所需的配置信息的屏幕截图。</block>
+  <block id="972ba37c9a6a437e2992461ee66b8619" category="paragraph"><block ref="972ba37c9a6a437e2992461ee66b8619" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e255f58a7ecc569b1a7762aad76b77cc" category="list-text">输入用于访问全局文件缓存核心 VM 的管理员凭据，然后单击 * 部署 GFC 核心 * 。对于 Azure ，请以用户名和密码的形式输入凭据；对于 AWS ，请选择相应的密钥对。您可以根据需要更改 VM/ 实例名称。</block>
+  <block id="05e7c33418df8d04d47d09bd377977c0" category="inline-image-macro">显示设置全局文件缓存核心实例所需的配置信息的屏幕截图。</block>
+  <block id="f12f59635f226ed3eb4e33879fb13977" category="paragraph"><block ref="f12f59635f226ed3eb4e33879fb13977" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="384294792758071d499d5318d1aa08d0" category="list-text">成功部署全局文件缓存核心后，单击 * 转至信息板 * 。</block>
+  <block id="203b7c79109edb97866777c89d577846" category="inline-image-macro">安装完成后显示全局文件缓存信息板的屏幕截图。</block>
+  <block id="5a8a02880034fca312249b034831de50" category="paragraph"><block ref="5a8a02880034fca312249b034831de50" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="026ded920edc7d21e9ce48cd106d87a2" category="paragraph">信息板显示管理服务器实例和核心实例均为 * 启用 * 且正常运行。</block>
+  <block id="919c43d3743dd344014a561e4f80f0ad" category="section-title">为全局文件缓存安装授予许可证</block>
+  <block id="72dbe03f6738932388eb1edd7ea550ca" category="paragraph">在使用全局文件缓存之前，您需要在全局文件缓存核心实例上配置全局文件缓存许可证管理服务器（ LMS ）服务。要激活您的订阅，您需要使用您的 NSS 凭据或 NetApp 提供的客户 ID 和订阅编号。</block>
+  <block id="e1fa96f0dfb2492f998b4f35bbd987b5" category="paragraph">在此示例中，我们将在您刚刚部署在公有云中的核心实例上配置 LMS 服务。此过程是一次性完成的，用于设置您的 LMS 服务。</block>
+  <block id="fa4f844a99f961304fac08fc3432b3fa" category="list-text">使用以下 URL 打开全局文件缓存核心（您要指定为 LMS 服务的核心）上的全局文件缓存许可证注册页面。将 _&lt;IP_address&gt;_ 替换为全局文件缓存核心的 IP 地址：<block ref="72dbd330743fc50599ec44d0fe0192d1" category="inline-link-rx"></block></block>
+  <block id="0c8ba78cfb15615de4a900fdeb69cbed" category="list-text">单击 * " 继续访问此网站（不建议） "* 继续。此时将显示一个页面，用于配置 LMS 或检查现有许可证信息。</block>
+  <block id="51ee9ee3332b44df7bc4e04d1c296874" category="inline-image-macro">全局文件缓存许可证注册页面的屏幕截图。</block>
+  <block id="844a1f8fbc7e15d51625eb8f943472ca" category="paragraph"><block ref="844a1f8fbc7e15d51625eb8f943472ca" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b8f60af9dc506c64f958249f3105cab1" category="list-text">选择注册模式：</block>
+  <block id="2e5c1726e97a02deb666329638b43f43" category="list-text">"NetApp LMS" 适用于已从 NetApp 或其认证合作伙伴购买 NetApp 全局文件缓存边缘许可证的客户。（首选）</block>
+  <block id="89be232bef4b64c85d8cfed4943cb4e2" category="list-text">对于通过 NetApp 支持获得客户 ID 的现有客户或试用客户，可以使用 " 原有 LMS " 。（此选项已弃用。）</block>
+  <block id="e4c7bcd1a56a4d517fb5e7ed4295b0ec" category="list-text">在此示例中，单击 * NetApp LMS* ，输入您的客户 ID （最好是您的电子邮件地址），然后单击 * 注册 LMS* 。</block>
+  <block id="f33a1d883db49eaa231194506e800e87" category="inline-image-macro">在全局文件缓存许可证注册页面中输入内部 LMS 客户 ID 的屏幕截图。</block>
+  <block id="c76308f1b3b5aedf0bfa9d404b4f216c" category="paragraph"><block ref="c76308f1b3b5aedf0bfa9d404b4f216c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="5db56790db29162e7da15656ad0a14df" category="list-text">查看 NetApp 发送的确认电子邮件，其中包含您的 GFC 软件订阅编号和序列号。</block>
+  <block id="8491533f3b8ee4194b1a99323008974a" category="inline-image-macro">NetApp 发送的电子邮件的屏幕截图，其中包含您的 GFC 软件订阅编号。</block>
+  <block id="4049570c64eff161ca3d30f60db5b6e5" category="paragraph"><block ref="4049570c64eff161ca3d30f60db5b6e5" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="bd066f1d692f0947e190ee6064708328" category="list-text">单击 * NetApp LMS 设置 * 选项卡。</block>
+  <block id="9ccd09996e8dc0745151bfe78a3bf4f7" category="list-text">选择 * GFC 许可证订阅 * ，输入您的 GFC 软件订阅编号，然后单击 * 提交 * 。</block>
+  <block id="70f8b97b24034e85a402ec9a10134e9b" category="inline-image-macro">在 GFC 许可证订阅页面中输入 GFC 软件订阅编号的屏幕截图。</block>
+  <block id="fa47d0136b382d22f766fa761a04805a" category="paragraph"><block ref="fa47d0136b382d22f766fa761a04805a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b45036707cc90430d164ae3587cf21ba" category="paragraph">您将看到一条消息，指出您的 GFC 许可证订阅已成功注册并已激活此 LMS 实例。此后购买的任何产品将自动添加到 GFC 许可证订阅中。</block>
+  <block id="bfbf9a67604bf6da34d29af94d1d924d" category="list-text">您也可以单击 * 许可证信息 * 选项卡查看所有 GFC 许可证信息。</block>
+  <block id="ee0fe7e0a86b5635a5fc069f948bb388" category="paragraph">如果您确定需要部署多个全局文件缓存核心来支持您的配置，请单击信息板中的 * 添加核心实例 * ，然后按照部署向导进行操作。</block>
+  <block id="ba2e216eebb078f554b8be7544c7170b" category="inline-link-macro">部署全局文件缓存边缘实例</block>
+  <block id="93abdd7bdefa66b64224b562ca5e4086" category="paragraph">完成核心部署后，您需要 <block ref="70c0ac315e2237e35dcbbd6d98197c9d" category="inline-link-macro-rx"></block> 在每个远程办公室中。</block>
+  <block id="ef0a7c56552e1272d8c5d9e5fb599479" category="section-title">部署其他核心实例</block>
+  <block id="4e4aa7908ad266b083d5ce1d16d8eae3" category="paragraph">如果您的配置由于大量 Edge 实例而需要安装多个全局文件缓存核心，则可以向工作环境添加另一个核心。</block>
+  <block id="fcafc696f895c2c546168d2a1248735e" category="paragraph">在部署 Edge 实例时，您将配置一些实例以连接到第一个核心，而另一些实例则连接到第二个核心。这两个核心实例都可访问工作环境中的同一后端存储（您的 Cloud Volumes ONTAP 实例）。</block>
+  <block id="ffd917e3a188963aaca624d7e9be0145" category="list-text">在全局文件缓存信息板中，单击 * 添加核心实例 * 。</block>
+  <block id="451dee323842a4acb0d1dc8b7efe20c6" category="inline-image-macro">GFC 信息板的屏幕截图以及用于添加其他核心实例的按钮。</block>
+  <block id="61de456010a3bab3d4ffccc75733e75b" category="paragraph"><block ref="61de456010a3bab3d4ffccc75733e75b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="8d27de6a961b36da305ccdb9c92c1cef" category="list-text">输入要加入 Active Directory 域的管理员用户凭据以及服务帐户用户凭据。然后单击 * 继续 * 。</block>
+  <block id="1601f847eea4689764f94762d42da468" category="list-text">全局文件缓存核心实例必须与 Cloud Volumes ONTAP 实例位于同一 Active Directory 域中。</block>
+  <block id="114a9772f4e07edb3f9ad9c542fb6927" category="list-text">输入用于访问全局文件缓存核心 VM 的管理员凭据，然后单击 * 部署 GFC 核心 * 。对于 Azure ，请以用户名和密码的形式输入凭据；对于 AWS ，请选择相应的密钥对。您可以根据需要更改虚拟机名称。</block>
+  <block id="503b83cd55eaafd02329ed7dab2d8810" category="paragraph"><block ref="503b83cd55eaafd02329ed7dab2d8810" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="d4258bbf3853a6e9c45602dc946b8b71" category="paragraph">信息板反映了工作环境的第二个核心实例。</block>
+  <block id="b7fcbadab1aa67b4ee66fdd86238335a" category="summary">借助 NetApp 全局文件缓存，您可以将分布式文件服务器孤岛整合到公有云中一个统一的全局存储占用空间中。这样就可以在云中创建一个可全局访问的文件系统，所有远程位置都可以像在本地一样使用该系统。</block>
+  <block id="82328c74c0b4efe6b06bb3d9dc6f05a9" category="doc">了解全局文件缓存</block>
+  <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概述</block>
+  <block id="fc61e1957dc4608feab0e7ddb84c24be" category="paragraph">实施全局文件缓存会产生一个集中的存储占用空间，而分布式存储架构则需要在每个位置进行本地数据管理，备份，安全管理，存储和基础架构占用空间。</block>
+  <block id="f230e8557049d33ab7e4c3128fb373bb" category="inline-image-macro">显示远程办公室位置如何使用全局文件缓存访问单个共享文件系统的示意图。</block>
+  <block id="118c0f68b5e6fccf964112937953654c" category="paragraph"><block ref="118c0f68b5e6fccf964112937953654c" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">功能</block>
+  <block id="4e63aad3265c4d005568c52205aaeb44" category="paragraph">全局文件缓存可启用以下功能：</block>
+  <block id="b2af53c8b5aa3b46f7284a7035894ab4" category="list-text">将数据整合并集中到公有云中，并利用企业级存储解决方案的可扩展性和性能</block>
+  <block id="5a1a220f80ef863fc3d1b825931fdee8" category="list-text">为全球用户创建一组数据，并利用智能文件缓存来改善全局数据访问，协作和性能</block>
+  <block id="1d40d5b2144a31da39c596193a7553cd" category="list-text">依靠可自我维持的自我管理缓存，并消除完整的数据副本和备份。利用本地文件缓存处理活动数据并降低存储成本</block>
+  <block id="eabc5b86be92567d6584b6f9bda306bf" category="list-text">通过全局命名空间从分支位置进行透明访问，并实时锁定中央文件</block>
+  <block id="4ce05bba4fc0acefbba5f691da672e1d" category="paragraph">查看有关全局文件缓存功能和用例的更多信息<block ref="419cd0b2469907a6725a985df52c9727" category="inline-link-rx"></block>。</block>
+  <block id="bae5d6926bc4f006241c5e6f94750678" category="section-title">全局文件缓存组件</block>
+  <block id="0f01e44182d4ad208ac99fd86195b6c6" category="paragraph">全局文件缓存包含以下组件：</block>
+  <block id="97734fa413fa7ffd4abe37881fb6eb11" category="list-text">全局文件缓存管理服务器</block>
+  <block id="2808786adaa0fe45c3d69c07d1075e58" category="list-text">全局文件缓存核心</block>
+  <block id="85942e5503c1c00d276d3a32787e60ba" category="list-text">全局文件缓存边缘（部署在远程位置）</block>
+  <block id="fc8176d8f355dbfc4247953d6bf4d346" category="paragraph">全局文件缓存核心实例挂载到您选择的后端存储平台（例如 Cloud Volumes ONTAP ， Cloud Volumes Service ， 和 Azure NetApp Files ），并创建全局文件缓存网络结构，使其能够将非结构化数据集中并整合到一组数据中，而无论这些数据位于公有云中的一个或多个存储平台上。</block>
+  <block id="813fe3f0ec18c33865dff38f15acf6e8" category="inline-image-macro">显示在远程办公室和云中的中央服务器上安装了软件的全局文件缓存部署详细信息的图表。</block>
+  <block id="5187ea0e239dfeb5ab25be21adb6c5f7" category="paragraph"><block ref="5187ea0e239dfeb5ab25be21adb6c5f7" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="e55dde8ab8d8ac9594c265cd439c94bf" category="section-title">支持的存储平台</block>
+  <block id="4639eb8d355012539c92019d722efa12" category="paragraph">根据您选择的部署选项，支持的全局文件缓存存储平台会有所不同。</block>
+  <block id="af1bba2ce5f90eecf243bb554ad8673d" category="section-title">自动化部署选项</block>
+  <block id="6ac4d1d538d783665d09fed4246c817b" category="paragraph">使用 Cloud Manager 部署时，以下类型的工作环境支持全局文件缓存：</block>
+  <block id="0e8f3fb260ced5550398e677e8e16659" category="list-text">Azure 中的 Cloud Volumes ONTAP</block>
+  <block id="bdcb25a0b74cb8c3c6dc4deb7e7dc876" category="list-text">AWS 中的 Cloud Volumes ONTAP</block>
+  <block id="0f654146c1b65006561ea8e31d5516dc" category="paragraph">通过此配置，您可以在 Cloud Manager 中部署和管理整个全局文件缓存服务器端部署，包括全局文件缓存管理服务器和全局文件缓存核心。</block>
+  <block id="a4bae3b774c4cc05ca00a01a97ff00ca" category="section-title">手动部署选项</block>
+  <block id="2eb40debe07bb6d7b909dce2c34426b1" category="paragraph">在公有云存储基础架构上安装的 Cloud Volumes ONTAP ， Cloud Volumes Service ， Azure NetApp Files 和 Amazon FSx for ONTAP 系统也支持全局文件缓存配置。此外， NetApp AFF 和 FAS 平台还提供内部解决方案。在这些安装中，必须手动配置和部署全局文件缓存服务器端组件，而不是使用 Cloud Manager 。</block>
+  <block id="71c2e99da61c94e7dc7d60497059a783" category="paragraph">请参见<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block> 了解详细信息。</block>
+  <block id="18fdbdb3de2540e1f631602b7bc2010f" category="section-title">全局文件缓存的工作原理</block>
+  <block id="8564f172539c6a5101d48785899b17a0" category="paragraph">全局文件缓存可创建一个软件网络结构，用于在全球远程办公室缓存活动数据集。因此，企业用户可以获得透明的数据访问保障，并在全球范围内获得最佳性能。</block>
+  <block id="c124c2afbd0b581682d787d402d2b2cf" category="inline-image-macro">一个图，显示边缘和核心的全局文件缓存组件。</block>
+  <block id="2b1c5cd93c07c48c42d9ed058d31676d" category="paragraph"><block ref="2b1c5cd93c07c48c42d9ed058d31676d" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="98b63173dd4ecb2326d95d7300606052" category="paragraph">本示例中引用的拓扑是一种中心和轮辐模型，远程办公室 / 位置的网络正在访问云中的一组通用数据。此示例的要点如下：</block>
+  <block id="8fef697f7f9f78c059ccfc40f4acea1e" category="list-text">集中式数据存储：</block>
+  <block id="4cb06c74a96499a607c0c95ead19581f" category="list-text">企业级公有云存储平台，例如 Cloud Volumes ONTAP</block>
+  <block id="5b3a4a00051b44e61a29bd172b6d73c1" category="list-text">全局文件缓存网络结构：</block>
+  <block id="bf4662b0e8c36712c67c5e97b320dfee" category="list-text">将中央数据存储扩展到远程位置</block>
+  <block id="81e79ef1781878305479da27d5c79856" category="list-text">全局文件缓存核心实例，挂载到公司文件共享（ SMB ）。</block>
+  <block id="031833f2cf4e8527c39c60bbdb3bd097" category="list-text">在每个远程位置运行的全局文件缓存边缘实例。</block>
+  <block id="83f1cff7aec325f369b4b7ec230e4326" category="list-text">在每个远程位置提供一个虚拟文件共享，用于访问中央数据。</block>
+  <block id="8846e89cb2a3b43e1079cc88ae2d9af6" category="list-text">在自定义大小的 NTFS 卷（ `D ： \` ）上托管智能文件缓存。</block>
+  <block id="d6b1a1e3c6e678c1adb5c3d7a9edd7dc" category="list-text">网络配置：</block>
+  <block id="39792004bb5e86d84188594315715f83" category="list-text">多协议标签交换（ MPLS ）， ExpressRoute 或 VPN 连接</block>
+  <block id="725f54ef9480b8e1eed0e76661c31fb1" category="list-text">与客户的 Active Directory 域服务集成。</block>
+  <block id="ab055fb1c85968bb4f5a4bc4ea101b6f" category="list-text">用于使用全局命名空间的 DFS 命名空间（建议）。</block>
+  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
+  <block id="fe5dbd0fc2a2bd12fa5c7f5d34edc9b3" category="paragraph">使用全局文件缓存的成本取决于您选择的安装类型。</block>
+  <block id="1af35f09e9d5c7c17f00c52e436d8840" category="list-text">所有安装都要求您在云（ Cloud Volumes ONTAP ， Cloud Volumes Service 或 Azure NetApp Files ）中部署一个或多个卷。这会导致从选定云提供商处收取费用。</block>
+  <block id="e5624fb8b348be8b0b94ecdc79a3e52a" category="list-text">所有安装还要求您在云中部署两个或更多虚拟机（ VM ）。这会导致从选定云提供商处收取费用。</block>
+  <block id="4fd5c85d8db73f12727e2cf94e421f13" category="list-text">全局文件缓存管理服务器：</block>
+  <block id="771dcff1843f23a97fc2a57e936d4a9f" category="paragraph">在 Azure 中，此操作在具有 127 GB 高级 SSD 的 D2S_V3 或等效虚拟机（ 2 个 vCPU/8 GB RAM ）上运行</block>
+  <block id="c6b798b0bebd4b2ec1cf891e6cd66c67" category="paragraph">在 AWS 中，此操作在具有 127 GB 通用 SSD 的 m4.large 或等效（ 2 个 vCPU/8 GB RAM ）实例上运行</block>
+  <block id="a93c3bd09e076f0b8fd65dde3e64a3a5" category="list-text">全局文件缓存核心：</block>
+  <block id="817000ba632406cdb4b5a4da3a5c5221" category="paragraph">在 Azure 中，此操作在具有 127 GB 高级 SSD 的 D4s_V3 或等效虚拟机（ 4 个 vCPU/16 GB RAM ）上运行</block>
+  <block id="6869983628ce136a6778d9ced07d3b4b" category="paragraph">在 AWS 中，此操作在具有 127 GB 通用 SSD 的 m4.xlarge 或等效（ 4 个 vCPU/16 GB RAM ）实例上运行</block>
+  <block id="ef0c50754592fa0cbd6118045a98f2b2" category="list-text">如果在 Azure 或 AWS 中安装了 Cloud Volumes ONTAP （完全通过 Cloud Manager 部署受支持的配置），则每个站点每年需要支付 3 ， 000 美元的费用（对于每个全局文件缓存边缘实例）。</block>
+  <block id="d2893970aa4c57a02af5ca132a872653" category="inline-link">计算您的节省潜力</block>
+  <block id="379066f65266388704788bf175a05aa9" category="list-text">如果使用手动部署选项安装，则定价会有所不同。要查看成本概要，请参见<block ref="72836bf520e34a0460d69e57e5e3610d" category="inline-link-rx"></block> 或者，请咨询全球文件缓存解决方案工程师，以讨论适用于您的企业部署的最佳方案。</block>
+  <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">许可</block>
+  <block id="30b7dc0ba4cd2cf04c1eda7c3a7b045a" category="paragraph">全局文件缓存包括一个基于软件的许可证管理服务器（ LMS ），通过该服务器，您可以使用自动化机制整合许可证管理并将许可证部署到所有核心和边缘实例。</block>
+  <block id="24b5cd8cad83af73f3fef17c36994df9" category="paragraph">在数据中心或云中部署第一个核心实例时，您可以选择将该实例指定为组织的 LMS 。此 LMS 实例配置一次，通过 HTTPS 连接到订阅服务，并使用我们的支持 / 运营部门在订阅启用后提供的客户 ID 验证您的订阅。指定此名称后，您可以通过提供您的客户 ID 和 LMS 实例的 IP 地址来将您的 Edge 实例与 LMS 相关联。</block>
+  <block id="3fbdffd6b695a9bc6ac6bcd1e40fd200" category="paragraph">当您购买其他 Edge 许可证或续订订订阅时，我们的支持 / 运营部门会更新许可证详细信息，例如站点数量或订阅结束日期。在 LMS 查询订阅服务后，许可证详细信息将自动在 LMS 实例上更新，并将应用于您的 GFC 核心和边缘实例。</block>
+  <block id="783b7f6f326468b70647d047949b4a2d" category="paragraph">请参见<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block> 有关许可的其他详细信息。</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="section-title">限制</block>
+  <block id="077a85a83497688c4768eb7e293d344f" category="list-text">Cloud Manager 中支持的全局文件缓存版本要求用作中央存储的后端存储平台必须是一个工作环境，在此环境中，您已在 Azure 或 AWS 中部署了 Cloud Volumes ONTAP 单节点或 HA 对。</block>
+  <block id="99f7abe9affc2a21c16a77c9bb170233" category="paragraph">目前，使用 Cloud Manager 不支持其他存储平台和其他云提供商，但可以使用传统部署过程进行部署。</block>
+  <block id="01eb0b4b5071a2cfc0876bc37b144a78" category="inline-link-macro">全局文件缓存概述和入职</block>
+  <block id="3b6e014ea92c423b54ec451d5fea8f9d" category="paragraph">这些其他配置，例如在 Microsoft Azure ， Google Cloud 或 AWS 上使用 Cloud Volumes ONTAP 或 Cloud Volumes Service 的全局文件缓存，仍可通过原有过程获得支持。请参见 <block ref="fa63b406bdb9a9e3c27b49aa6f287806" category="inline-link-macro-rx"></block> 了解详细信息。</block>
+  <block id="8dad639df001ffd300f26b14bb31b017" category="summary">在远程办公室安装全局文件缓存边缘软件之前，您需要了解许多要求。</block>
+  <block id="880c5f720679786a7ae73fdda6982c7f" category="doc">开始部署全局文件缓存边缘实例之前</block>
+  <block id="7a285bcce3684231f2e0a4bb8ac77616" category="section-title">下载所需资源</block>
+  <block id="3d1f770c1695810bcea04a5979c1c00a" category="paragraph">下载您计划在分支机构使用的全局文件缓存虚拟模板，软件安装包以及其他参考文档：</block>
+  <block id="17fcbeb5f192793fd41f089a59730538" category="list-text">Windows Server 2016 虚拟模板：</block>
+  <block id="7cfa172f8a8d357df3a2106ac8c6b398" category="inline-link">包括 NetApp GFC （ VMware vSphere 6.5 及更高版本）的 Windows Server 2016 .OVA</block>
+  <block id="835e49a2c436ab4a585d71025b4cc7fa" category="inline-link">包括 NetApp GFC （ Microsoft Hyper-V ）的 Windows Server 2016 .vhdx</block>
+  <block id="74c1c198764376851e343ef90700832f" category="paragraph"><block ref="d490fcd4b2c2fb0ec02e4d9cb7241c2c" category="inline-link-rx"></block>
+<block ref="5ce4994e3574e1519846ea4bae459955" category="inline-link-rx"></block></block>
+  <block id="7eeb858e6d60489627b61144a4b897b9" category="list-text">Windows Server 2019 虚拟模板：</block>
+  <block id="02e6ddd105b75a46cfcba50b442be725" category="inline-link">包括 NetApp GFC （ VMware vSphere 6.5 及更高版本）的 Windows Server 2019 .OVA</block>
+  <block id="135435a8d8eb3533e52dfec2d082e667" category="inline-link">包括 NetApp GFC （ Microsoft Hyper-V ）的 Windows Server 2019 .vhdx</block>
+  <block id="a68c19a669a835b1ba7bd2bc866c7be7" category="paragraph"><block ref="a0714920be08541f39247af287ebb1c0" category="inline-link-rx"></block>
+<block ref="23408a8df3be8898d68f3f43486f46e0" category="inline-link-rx"></block></block>
+  <block id="4bf707356ffc6bfcdc7eaddeb5d9ca6b" category="list-text">全局文件缓存边缘软件：</block>
+  <block id="faf7d644098124d7a6915b6cc59a0988" category="inline-link">NetApp GFC 软件安装包（ .exe ）</block>
+  <block id="e4ab66bf075d22009f41eea8ac42df07" category="paragraph"><block ref="e4ab66bf075d22009f41eea8ac42df07" category="inline-link-rx"></block></block>
+  <block id="c02f6931ac1cb0d6f6c43728f2c59458" category="list-text">全局文件缓存 SCOM （ Microsoft Systems Center Operations Manager ）软件包：</block>
+  <block id="6cfcd1fac0b2e806d26cc363f98afe52" category="inline-link">NetApp GFC SCOM 管理软件包（ .ZIP ）</block>
+  <block id="94ab5cbee962c68b827980048c10c188" category="paragraph"><block ref="94ab5cbee962c68b827980048c10c188" category="inline-link-rx"></block></block>
+  <block id="e2d416ed29232c19a683a619f4500452" category="list-text">全局文件缓存文档：</block>
+  <block id="5ce7f81a8ae145f3b72b93e3696353d9" category="inline-link">《 NetApp 全局文件缓存用户指南》（ .PDF ）</block>
+  <block id="902e21b51073e1263d69ddcfe6053a5d" category="paragraph"><block ref="902e21b51073e1263d69ddcfe6053a5d" category="inline-link-rx"></block></block>
+  <block id="d30bfe96d7c62ab706482cb5c2b4a1ec" category="section-title">设计和部署全局文件缓存边缘</block>
+  <block id="5698363b5f7247a6f653aa572ae1cb51" category="paragraph">根据您的要求，您可能需要根据分支机构中的并发用户会话部署一个或多个全局文件缓存边缘实例。Edge 实例将虚拟文件共享呈现给分支机构的最终用户，该实例已从关联的全局文件缓存核心实例透明地扩展。全局文件缓存边缘应包含 `D ： \` NTFS 卷，该卷包含分支机构内的缓存文件。</block>
+  <block id="f545daefd1b990207b6063d1a0d100bb" category="inline-link-macro">规模估算准则</block>
+  <block id="a9f922d8715f1a0a77c5687f0cb5aa93" category="admonition">对于全局文件缓存边缘，了解非常重要 <block ref="59a96d2edb633193f59953bdf68d36ab" category="inline-link-macro-rx"></block>。这将有助于您为全局文件缓存部署制定正确的设计。此外，您还需要确定在规模，资源可用性和冗余方面哪些方面适合您的环境。</block>
+  <block id="1f01263cf82c613fccc25592d0c644d1" category="section-title">全局文件缓存边缘实例</block>
+  <block id="ec0d814add25a4fc3dfc82c64e2a0a25" category="paragraph">部署全局文件缓存边缘实例时，您需要通过部署 Windows Server 2016 Standard 或 Datacenter Edition ， Windows Server 2019 Standard 或 Datacenter Edition 或使用全局文件缓存 ` .OVA` 或 ` .VHD` 模板来配置单个 VM 。 其中包括所选的 Windows Server 操作系统和全局文件缓存软件。</block>
+  <block id="8ea62d632a69911dcf193e9803b1195a" category="section-title">快速步骤</block>
+  <block id="1ddb4fd9bc199098a3452888d7888a88" category="list-text">部署全局文件缓存虚拟模板， Windows Server 2016 VM ， Windows Server 2019 标准版或数据中心版。</block>
+  <block id="763a323edb75b0d5d83ac2607f4b66f9" category="list-text">确保虚拟机已连接到网络，已加入域并可通过 RDP 访问。</block>
+  <block id="3f494848de788cdeb6f9c66228d6f280" category="list-text">安装最新的 Global File Cache Edge 软件。</block>
+  <block id="e2c9fef91fc86583c95dce7414e8378b" category="list-text">确定全局文件缓存管理服务器和核心实例。</block>
+  <block id="7e0c0c2322d32ad8800deed6f0446a88" category="list-text">配置全局文件缓存边缘实例。</block>
+  <block id="b79d82b1580b1c089977036ab5909a2b" category="section-title">全局文件缓存边缘要求</block>
+  <block id="dda6766b3822de333933a3770e1ae688" category="paragraph">全球文件缓存边缘旨在支持 Windows Server 2016 和 2019 的所有平台上运行，为企业远程办公室及其他地方提供简化的 IT 。关键是，如果您的现有硬件基础架构，虚拟化或混合 / 公共云环境满足一些基本要求，则几乎可以在每个情况下都部署全局文件缓存。</block>
+  <block id="137e4d3e0bc5586af6fc7ca9441511e1" category="inline-link-macro">规模估算准则</block>
+  <block id="4ac6218bd988565bf3ec6d86dd25e5ee" category="paragraph">要使全局文件缓存边缘以最佳状态运行，需要以下硬件和软件资源。有关整体规模估算准则的详细信息，请参见 <block ref="9215c6eb660e6747de22e76d94c0e37f" category="inline-link-macro-rx"></block>。</block>
+  <block id="831485d3736514b490af98e2fdcac477" category="section-title">经过加固的服务器设备</block>
+  <block id="667527cf2158cc0bb126a5aa3508ed66" category="paragraph">全局文件缓存安装包可在任何 Microsoft Windows Server 实例上创建一个经过加固的软件设备。_Do not Uninstall_ 全局文件缓存软件包。卸载全局文件缓存将影响服务器实例的功能，并且可能需要完全重建服务器实例。</block>
+  <block id="976611c38f37696030731d275b8d5432" category="section-title">物理硬件要求</block>
+  <block id="602adfd1d4d2e2ef7316c32670824757" category="list-text">至少 4 个 CPU 核</block>
+  <block id="f5364e9691950b5411b570b3b7444ec4" category="list-text">至少 16 GB RAM</block>
+  <block id="007aef1d58264ca7b5e941be27c7efe0" category="list-text">专用单个或冗余 1 Gbps NIC</block>
+  <block id="683873eb7a29d80efb08b1ec4990f98d" category="list-text">10K RPM SAS HDD 或 SSD （首选）</block>
+  <block id="27fe2dd4bc7bfc5f6cc10da8e820dd79" category="list-text">启用了回写缓存功能的 RAID 控制器</block>
+  <block id="7ae06578c5e181b31c27950df9eeefff" category="section-title">虚拟部署要求</block>
+  <block id="2feaa60c9a258195d110d4b93298ab94" category="paragraph">从存储子系统的角度来看，虚拟机管理程序平台的性能可能会下降（例如延迟）。为了使用全局文件缓存获得最佳性能，建议使用具有 SSD 的物理服务器实例。</block>
+  <block id="d58b313fe182fc0207ded02961ec8b3e" category="paragraph">为了在虚拟环境中获得最佳性能，除了物理主机要求之外，还必须满足以下要求和资源预留：</block>
+  <block id="a39c39a13a34c8ae4f43e53b744d7a93" category="paragraph">Microsoft Hyper-V 2012 R2 及更高版本：</block>
+  <block id="4b2d1e89406fad567f90d7f405a89a0a" category="list-text">处理器（ CPU ）： CPU 必须设置为 * 静态 * ：最小： 4 个 vCPU 核心。</block>
+  <block id="a9c115a547ec0e88e446fac7e1437201" category="list-text">内存（ RAM ）：最小： 16 GB 设置为 * 静态 * 。</block>
+  <block id="e2dc7db2b7946e399b3526201828d47b" category="list-text">硬盘配置：硬盘必须配置为 * 固定磁盘 * 。</block>
+  <block id="193a7828172c581c20b5f99b87f0d8d5" category="paragraph">VMware vSphere 6.x 及更高版本：</block>
+  <block id="546eae45bf42f32b489133fe40c615ae" category="list-text">处理器（ CPU ）：必须设置 CPU 周期预留。最小值： 4 个 vCPU 核心 @ 10000 MHz 。</block>
+  <block id="da83ed8f749c1aeee277ef8b1e92e603" category="list-text">Memory （ RAM ）：最小：预留 16 GB 。</block>
+  <block id="01c789b083ceb94098fc54bf2689692f" category="list-text">硬盘配置：</block>
+  <block id="aa9003d495921644b8600f3e28ebe636" category="list-text">磁盘配置必须设置为 * 厚配置主动置零 * 。</block>
+  <block id="8254451398fa8d542f44b8faf882706e" category="list-text">硬盘共享必须设置为 * 高 * 。</block>
+  <block id="a39ed05a063b763436f3dde85d98754e" category="list-text">必须使用 vSphere Client 将 devices.hotplug 设置为 * 。 False ，以防止 Microsoft Windows 将全局文件缓存驱动器提供为可移动驱动器。</block>
+  <block id="486ca25a7b25a59aefc91d70f0803203" category="list-text">网络连接：必须将网络接口设置为 * 。 VMXNET3* （可能需要 VM 工具）。</block>
+  <block id="29d20a0168d9c6e66b5b816098fe5bfe" category="paragraph">全局文件缓存在 Windows Server 2016 和 2019 上运行，因此虚拟化平台需要支持操作系统，并与实用程序相集成以提高 VM 子操作系统的性能和 VM 管理，例如 VM Tools 。</block>
+  <block id="9e73ed1329315cfef8e2886915af8896" category="section-title">分区规模估算要求</block>
+  <block id="724a9580f889e10d97820373eb8ca1f3" category="list-text">C ： \ - 最小 250 GB （系统 / 启动卷）</block>
+  <block id="31e57f0e2f21035dcd125996fc7910f1" category="list-text">D ： \ - 最小 1 TB （用于全局文件缓存智能文件缓存的单独数据卷 * ）</block>
+  <block id="e48ab3024cfcf431a14c3003435bfd56" category="paragraph">* 最小大小是活动数据集的 2 倍。缓存卷（ D ： \ ）可以扩展，并且仅受 Microsoft Windows NTFS 文件系统限制。</block>
+  <block id="c05b754004fbd4130eae9e62448598e2" category="section-title">全局文件缓存智能文件缓存磁盘要求</block>
+  <block id="85b5f3c25b56d8971fb15ba1b85c9098" category="paragraph">全局文件缓存智能文件缓存磁盘（ D ： \ ）上的磁盘延迟应为每个并发用户提供小于 0.5 毫秒的平均 I/O 磁盘延迟和 1 MiBps 吞吐量。</block>
+  <block id="004900c685652a75205564c9679b2be4" category="paragraph">有关详细信息，请参见<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block>。</block>
+  <block id="a5fa5746370b608090b994a97b49e98b" category="section-title">网络</block>
+  <block id="07b05d86c9937c2ed6c68c1c3c82ba9a" category="list-text">防火墙：应允许在全局文件缓存边缘和管理服务器与核心实例之间使用 TCP 端口。</block>
+  <block id="79329656b58b4f751ab1443743fcbee0" category="paragraph">全局文件缓存 TCP 端口： 443 （ HTTPS - LMS ）， 6618 – 6630 。</block>
+  <block id="9e3e7b6b69b143adaf0ad3ceb48aae35" category="list-text">必须将网络优化设备（例如 Riverbed Steelhead ）配置为直通全局文件缓存专用端口（ TCP 6618-6630 ）。</block>
+  <block id="1fbc431dee8a6b3b664020a773591201" category="section-title">客户端工作站和应用程序最佳实践</block>
+  <block id="06493aee7995cc818af61c2924efce03" category="inline-link-macro">开始部署全局文件缓存之前</block>
+  <block id="603c481dce5ea9501582f855a272293d" category="paragraph">全局文件缓存可透明地集成到客户环境中，从而使用户可以使用其客户端工作站访问集中式数据，并运行企业级应用程序。使用全局文件缓存，可以通过直接驱动器映射或 DFS 命名空间访问数据。有关全局文件缓存网络结构，智能文件缓存以及软件关键方面的详细信息，请参见 <block ref="bf537e703603ffded61bf06d23640509" category="inline-link-macro-rx"></block> 部分。</block>
+  <block id="35bd173c5c09760e27239213b562c7a2" category="paragraph">为了确保获得最佳体验和性能，请务必遵循《全局文件缓存用户指南》中所述的 Microsoft Windows 客户端要求和最佳实践。此适用场景适用于所有版本的 Microsoft Windows 。</block>
+  <block id="a0d1fd507848b71fc407746a94f31ef3" category="section-title">防火墙和防病毒最佳实践</block>
+  <block id="5effefb1057efd2748258b65d97bf200" category="paragraph">虽然全局文件缓存会尽力验证最常见的防病毒应用程序套件是否与全局文件缓存兼容，但对于这些程序或其相关更新，服务包或修改导致的任何不兼容或性能问题， NetApp 不能提供担保，也不承担任何责任。</block>
+  <block id="b924b9145d6f4426935534d7b26de3da" category="paragraph">全局文件缓存不建议在任何启用了全局文件缓存的实例（核心或边缘）上安装或应用监控或防病毒解决方案。如果是根据选择或策略安装解决方案，则必须应用以下最佳实践和建议。有关常见防病毒套件，请参见中的附录 A<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block>。</block>
+  <block id="1d8d6b8f9abcab53172954c91e5d8de9" category="section-title">防火墙设置</block>
+  <block id="cd476ae4644da8d9986293ca4ccec11c" category="list-text">Microsoft 防火墙：</block>
+  <block id="74d0be744832a30201de162b50221ae7" category="list-text">保留默认防火墙设置。</block>
+  <block id="3b40305af47874bad1b7a9791a6fba59" category="list-text">建议：对于标准全局文件缓存边缘实例，将 Microsoft 防火墙设置和服务保留为默认设置 off ，而不是启动。</block>
+  <block id="ec2717c888d851defea3145db2ac468e" category="list-text">建议：将 Microsoft 防火墙设置和服务保留为默认设置 on ，并为同时运行域控制器角色的 Edge 实例启动。</block>
+  <block id="3c73ae554bdf159a84c4ce56394b084b" category="list-text">企业防火墙：</block>
+  <block id="fa4422e1649fd6bb212beebc46669eab" category="list-text">全局文件缓存核心实例侦听 TCP 端口 6618-6630 ，确保全局文件缓存边缘实例可以连接到这些 TCP 端口。</block>
+  <block id="662c746bbad04699605c42230359dc78" category="list-text">全局文件缓存实例需要通过 TCP 端口 443 （ HTTPS ）与全局文件缓存管理服务器进行通信。</block>
+  <block id="21b9f51fc75798b971847bd516553644" category="list-text">必须将网络优化解决方案 / 设备配置为直通全局文件缓存特定端口。</block>
+  <block id="047ff8e79c7124b6aed2f30a879e9d2b" category="section-title">防病毒最佳实践</block>
+  <block id="6f2fd7a86f8cef2a60f22f813d46b917" category="paragraph">本节将帮助您了解在运行全局文件缓存的 Windows Server 实例上运行防病毒软件的要求。Global File Cache 已测试最常用的防病毒产品，包括 Cylance ， McAfee ， Symantec ， Sophos ， Trend Micro ， 与全局文件缓存结合使用的 Kaspersky 和 Windows Defender 。</block>
+  <block id="7fe70d8482fea172d2f27e34dd091935" category="admonition">向 Edge 设备添加防病毒软件可能会对用户性能产生 10 – 20% 的影响。</block>
+  <block id="77e4365f0d8727fe3c465fb04f26ce93" category="section-title">配置排除项</block>
+  <block id="7e97ed382f6a1568b4024c1aafe5994c" category="paragraph">防病毒软件或其他第三方索引编制或扫描实用程序绝不能扫描 Edge 实例上的驱动器 D ： \ 。这些对 Edge 服务器驱动器 D ： \ 的扫描将导致对整个缓存命名空间发出大量文件打开请求。这将导致通过 WAN 将文件提取到数据中心优化的所有文件服务器。Edge 实例上会发生 WAN 连接泛洪和不必要的负载，从而导致性能下降。</block>
+  <block id="2ddd9f927c8456f98d29b59e20cc5f5b" category="paragraph">除了 D ： \ 驱动器之外，以下全局文件缓存目录和进程通常应从所有防病毒应用程序中排除：</block>
+  <block id="a3c9975e4268a360fec075ea1f6e7e69" category="list-text">`C ： \Program Files\TalonFAST\`</block>
+  <block id="bf1fb4bfba01f634e06a2d43d2394131" category="list-text">`C ： \Program Files\TalonFAST\Bin\LMClientService.exe`</block>
+  <block id="6d0291558b40be1dc38ddd87e7e67460" category="list-text">`C ： \Program Files\TalonFAST\Bin\LMServerService.exe`</block>
+  <block id="bce60f6dda3a79e3bcea306480dfc878" category="list-text">`C ： \Program Files\TalonFAST\Bin\Optimus.exe`</block>
+  <block id="d78df95b70cf4c6dee42e8ead722491a" category="list-text">`C ： \Program Files\TalonFAST\Bin\tafsexport.exe`</block>
+  <block id="d754b201e4955b9f605d7add91203958" category="list-text">`C ： \Program Files\TalonFAST\Bin\tafsutils.exe`</block>
+  <block id="bcb15a6175fb4778b590db4ad27396ff" category="list-text">`C ： \Program Files\TalonFAST\Bin\tapp.exe`</block>
+  <block id="7f58313a3e0bc8a0479b6f4849ec1e77" category="list-text">`C ： \Program Files\TalonFAST\Bin\TappN.exe`</block>
+  <block id="7fa72ec93fc5979b56e163380b01c0b2" category="list-text">`C ： \Program Files\TalonFAST\Bin\FTLSummaryGenerate.exe`</block>
+  <block id="dd4c0c600e4347a07e5d30c3bed856d8" category="list-text">`C ： \Program Files\TalonFAST\Bin\RFASTSetupWizard.exe`</block>
+  <block id="456f4de04b845c12a47ae32d653b612b" category="list-text">`C ： \Program Files\TalonFAST\Bin\TService.exe`</block>
+  <block id="3727c2e5b330fcfe7717c6c1bea1f978" category="list-text">`C ： \Program Files\TalonFAST\Bin\tm.exe`</block>
+  <block id="7c9983ef3443840ff03eaa2812bd883e" category="list-text">`C ： \Program Files\TalonFAST\Fast调试 日志 \`</block>
+  <block id="74c060f7e3a37b85b5d53c7fe89cf2f8" category="list-text">`C ： \Windows\System32\drivers\tfast.sys`</block>
+  <block id="d6962970cb361bb6d1d7612ae9e106b3" category="list-text">` \\ ？ TafsMtPt ： \` 或 ` \ ？ TafsMtP*`</block>
+  <block id="c58c85a6f844b156a2d47fd79504c643" category="list-text">` \Device\TalonCachFS\`</block>
+  <block id="17937cca8244e81de13eeb7cc6f4d869" category="list-text">` \\ ？ \GLOBALROOT\Device\TalonCachFS\`</block>
+  <block id="3b710b0888968f7413d44955601b751d" category="list-text">` \\ ？ \GLOBALROOT\Device\TalonCachFS\*`</block>
+  <block id="a62465504884636280659bec3400d68a" category="section-title">NetApp 支持策略</block>
+  <block id="393f77e03dc0247308a18c520b8ef41a" category="paragraph">全局文件缓存实例专为全局文件缓存设计，作为在 Windows Server 2016 和 2019 平台上运行的主应用程序。全局文件缓存要求优先访问平台资源，例如磁盘，内存，网络接口， 并可能对这些资源提出高需求。虚拟部署需要预留内存 /CPU 和高性能磁盘。</block>
+  <block id="a803e333f62bb9a90d117699ef830dfb" category="list-text">对于部署全局文件缓存的分支机构，运行全局文件缓存的服务器上支持的服务和应用程序限制为：</block>
+  <block id="56e5f7d2a259ae62a6e0729ffb57de0a" category="list-text">DNS/DHCP</block>
+  <block id="116a9773c0a5077544d8636111dd5c53" category="list-text">Active Directory 域控制器（全局文件缓存必须位于单独的卷上）</block>
+  <block id="c718f76b60a0fc7efd97036a70cb36d9" category="list-text">打印服务</block>
+  <block id="b70ae60e9922e0ed61cdd248b7d89c8c" category="list-text">Microsoft System Center Configuration Manager （ Microsoft System Center Configuration Manager ， SCCM" ）</block>
+  <block id="9a25a6bb22d71ca7f745eaad923e2971" category="list-text">经全局文件缓存批准的客户端系统代理和防病毒应用程序</block>
+  <block id="f356482904e6832d3cc99dacd15c42db" category="list-text">NetApp 支持和维护仅适用于全局文件缓存。</block>
+  <block id="ec7fd1c8b87a6f5d275bc4e24065e734" category="list-text">业务部门生产效率软件，通常需要大量资源，例如数据库服务器，邮件服务器等。 不支持。</block>
+  <block id="713817da2f1a5080b9306b0f5948c915" category="list-text">客户负责可能安装在运行全局文件缓存的服务器上的任何非全局文件缓存软件：</block>
+  <block id="29ae68bca05f43a639abb409a93824fd" category="list-text">如果任何第三方软件包导致软件或资源与全局文件缓存发生冲突或性能受到影响，则全局文件缓存的支持组织可能会要求客户在运行全局文件缓存的服务器上禁用或删除该软件。</block>
+  <block id="fd99d9f9599b3ae81274090f0dcf4496" category="list-text">客户负责安装，集成，支持和升级添加到运行全局文件缓存应用程序的服务器的任何软件。</block>
+  <block id="f218d788a46edbfbe310bfaeacdb08a5" category="list-text">防病毒工具和许可代理等系统管理实用程序 / 代理可能可以共存。但是，除了上面列出的受支持服务和应用程序之外，全局文件缓存不支持这些应用程序，并且仍必须遵循上述准则：</block>
+  <block id="b877459195b00b2b29061b8a391060a2" category="list-text">客户负责安装，集成，支持和升级所添加的任何软件。</block>
+  <block id="43449f1753c58e92ee1a0135eba67515" category="list-text">如果客户安装的任何第三方软件包导致或怀疑导致软件或资源与全局文件缓存冲突或性能受到影响，则全局文件缓存的支持组织可能要求禁用 / 删除该软件。</block>
+  <block id="05afb31a8c6a9f33471f04fc566255e1" category="summary">了解全局文件缓存中的新增功能。</block>
+  <block id="6d712ec6825e52d97c46202643237199" category="doc">全局文件缓存的新增功能</block>
+  <block id="df62d5ca9c29346bfeb41f9581ecdf5b" category="section-title">2021 年 12 月 17 日（版本 1.2.0 ）</block>
+  <block id="cd25d0dea9ddd72c58145908f9602867" category="section-title">OpenSSL 模块已升级到 1.1.1l 版。</block>
+  <block id="9d15f44f2f441c9fbcdc28d40b323389" category="paragraph">这是最新版本，更安全。此模块用于在 GFC Edge 和 GFC 核心之间进行安全通信。</block>
+  <block id="c49811e0cecf194341b2ae059236dc2a" category="section-title">日志记录基础架构已得到增强。</block>
+  <block id="4d18c7d8762e789debac221e79dece82" category="section-title">2021 年 6 月 9 日（版本 1.1.0 ）</block>
+  <block id="77e6f4e52a856772d2e09ae19855212a" category="section-title">已添加 " 边缘同步 " 功能。</block>
+  <block id="850383dab52cb38649682d2f7d66f04f" category="paragraph">此功能可使远程办公室的多个边缘保持同步，并且数据始终处于缓存 / 预热状态。在一个 Edge 上刷新 / 提取文件时，将更新和缓存参与 Edge Sync 的所有边缘上的同一文件。请参见中的第 8.4 节<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block> 了解详细信息。</block>
+  <block id="8703dd42c4c647846ef556f4d8459d59" category="section-title">OpenSSL 模块已升级到 1.1.1k 版。</block>
+  <block id="513502857f15915e7acef1b7916eda1b" category="section-title">已更新许可证注册页面。</block>
+  <block id="9993afe041a131f763bfa71520f8d27d" category="paragraph">现在， GFC 许可证注册页面将显示通过 NetApp 订阅激活的许可证数量。</block>
+  <block id="5be3d95052c37ddc7c5e08fede5b7beb" category="section-title">2021 年 3 月 21 日（ 1.0.3 版）</block>
+  <block id="d701539c3bff162de55bec2ac786dea9" category="section-title">软件安装程序会更新，以自动从 Windows Defender 中排除 GFC 进程。</block>
+  <block id="2c7e576e2b46004ee7c7f2138e6b71e2" category="paragraph">现在，全局文件缓存软件安装程序会将所有 GFC 进程排除在 Windows Defender 软件按需扫描之外。</block>
+  <block id="718c867d7cc0d5ae654df61aed5134dd" category="section-title">已向配置控制台添加一个新的策略配置选项卡。</block>
+  <block id="85630a0f5573b7e43d043882435503c0" category="paragraph">通过此配置选项卡，您可以从 GFC 核心添加预填充作业。</block>
+  <block id="23f584e2a92da05ee5a990cefc20a926" category="section-title">增强了软件功能，可减少内存使用量，同时提高性能和稳定性。</block>
+  <block id="ce21e7ae4271271294ccbf54c8fd6864" category="summary">NetApp 通过多种方式为 Cloud Manager 提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
+  <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="doc">获取帮助</block>
+  <block id="7ccaf84febc0ed633fbdbadb8d488a7e" category="paragraph"><block ref="7ccaf84febc0ed633fbdbadb8d488a7e" category="inline-link-macro-rx"></block></block>
+  <block id="922a8d78e53c1dc3158a6ee5d95c210f" category="summary">确认您的环境满足所有要求后，您可以在每个远程办公室安装全局文件缓存边缘软件。</block>
+  <block id="922da05fe50477cd0460596ea2c098d2" category="doc">部署全局文件缓存边缘实例</block>
+  <block id="135b308ed83c53f1516b7c754566d1c4" category="section-title">开始之前</block>
+  <block id="9382b15f71e2fe311d449ef584c1cf33" category="paragraph">要完成全局文件缓存边缘配置任务，您需要以下信息：</block>
+  <block id="203c2d612ad534717568cf44bfb6d01a" category="list-text">每个全局文件缓存实例的静态 IP 地址</block>
+  <block id="3dccf72fe610d6922e392e93335fdb6d" category="list-text">子网掩码</block>
+  <block id="c2eec1849e83099bbab1cd0ae936bbf5" category="list-text">网关 IP 地址</block>
+  <block id="29e075df0a68ed3664cecaa2b3e5270b" category="list-text">要分配给每个全局文件缓存服务器的 FQDN</block>
+  <block id="860a94f98e1f15a61ad1071ceae3e66c" category="list-text">DNS 后缀（可选）</block>
+  <block id="59d11460c288d30dc7ad5385fa70a643" category="list-text">域中管理用户的用户名和密码</block>
+  <block id="aa8a51c7873eebddd266e8f9fc005551" category="list-text">关联核心服务器的 FQDN 和 / 或 IP 地址</block>
+  <block id="c00628f28575c396399b6fe766bd9a7f" category="list-text">要用作智能文件缓存的卷。建议此大小至少为活动数据集大小的 2 倍。此格式应设置为 NTFS ，并分配为 `D ： \` 。</block>
+  <block id="0429b6f2baa57a9ff0f0c98fb59e6375" category="section-title">常用 TCP 端口</block>
+  <block id="6a0366985ddb1aa20b495373293142ec" category="paragraph">全局文件缓存服务使用多个 TCP 端口。这些设备必须能够在这些端口上进行通信，并且不会被排除在任何 WAN 优化设备或防火墙限制策略中：</block>
+  <block id="f02d2b1afa248bc891c1ca243f1f031c" category="list-text">全局文件缓存许可 TCP 端口： 443</block>
+  <block id="912558c622ede2ae3ca281d4700ee560" category="list-text">全局文件缓存 TCP 端口： 6618-6630</block>
+  <block id="82afbd4bf3bc89ece291522d43a2ff55" category="section-title">部署全局文件缓存虚拟模板</block>
+  <block id="5e7e522f1a55e88caedd694bc786a5bf" category="paragraph">虚拟模板（` .OVA` 和 ` .VHD` ）映像包含最新版本的全局文件缓存软件。如果要使用 ` .OVA` 或 ` .VHD` 虚拟机（ VM ）模板部署全局文件缓存，请按照本节所述的步骤进行操作。我们假定您了解如何在指定的虚拟机管理程序平台上部署 ` .OVA` 或 ` .VHD` 模板。</block>
+  <block id="13e092e9dc8de04d97af3a0b6da3b8a7" category="paragraph">确保 VM 首选项（包括资源预留）符合中所述的要求 <block ref="5c1cbf50532c1013d88cfe61fe821a6c" category="inline-link-macro-rx"></block>。</block>
+  <block id="fc7a0d8ea6364bfb41e06422b71c429e" category="list-text">从您下载的模板提取软件包。</block>
+  <block id="7eb43a57e6622c0ef233416570f7ae52" category="list-text">部署虚拟模板。在开始部署之前，请参见以下视频：</block>
+  <block id="24b504ce13adee2ae64748e83c4c4ec9" category="inline-link">在 VMware 上部署虚拟模板</block>
+  <block id="fb12c3e8043e032005d552a11ca90443" category="list-text"><block ref="fb12c3e8043e032005d552a11ca90443" category="inline-link-rx"></block></block>
+  <block id="14b0ff7ba78834aa4a65d9eae88a7a1d" category="inline-link">在 Hyper-V 上部署虚拟模板</block>
+  <block id="f25eacc233a841135303ff118464050b" category="list-text"><block ref="f25eacc233a841135303ff118464050b" category="inline-link-rx"></block></block>
+  <block id="de69420753120e1e78642c886c7109e8" category="list-text">部署虚拟模板并配置 VM 设置后，启动 VM 。</block>
+  <block id="e09ea0b56cfaa5a1f397080dd486b5f2" category="list-text">在初始启动期间，当 Windows Server 2016 或 2019 操作系统准备首次使用时，请安装正确的驱动程序并为相应硬件安装必要的组件，以完成即装即用体验。</block>
+  <block id="43b2c7e77832f93c63cb9fba6f421c82" category="list-text">在完成全局文件缓存边缘实例的基础安装后， Windows Server 2016 或 2019 操作系统将指导您完成初始配置向导，以配置操作系统的具体信息，例如本地化和产品密钥。</block>
+  <block id="dee8dd3dec17bcdeb7aeaa26a0da5d34" category="list-text">完成初始配置向导后，使用以下凭据在本地登录到 Windows Server 2016 或 2019 操作系统：</block>
+  <block id="e88d9e809b189685f2b697f0d2877e93" category="list-text">用户名： * FASTAdmin*</block>
+  <block id="b0510fc1d488a120fdf78923e0b172a9" category="list-text">密码： * 。 Tal0nFAST ！ *</block>
+  <block id="ad17b65ba7f615ee93dab53c7e6ef1bf" category="list-text">配置 Windows Server VM ，加入组织的 Active Directory 域，然后继续执行全局文件缓存边缘配置部分。</block>
+  <block id="08625e4693b2132a2e5fe21d62eb42fa" category="section-title">配置全局文件缓存边缘实例</block>
+  <block id="8b4b411ffee316002bf45bd7da314311" category="paragraph">全局文件缓存边缘实例连接到全局文件缓存核心，以使分支机构的用户能够访问数据中心文件服务器资源。</block>
+  <block id="9ffedcb724b4feb8a504d1992a427f91" category="admonition">在开始配置之前，必须在 Cloud Volumes ONTAP 部署中为 Edge 实例授予许可。请参见 <block ref="377fd5f39b29a70f5e638818d5a59395" category="inline-link-macro-rx"></block> 有关许可的详细信息。</block>
+  <block id="23cd22389564f4bb02434de0b782993d" category="paragraph">如果由于边缘实例数量众多，您的配置需要安装多个全局文件缓存核心，则您需要将某些边缘实例配置为连接到第一个核心，而将其他边缘实例配置为连接到第二个核心。确保您已为正确的核心实例获取 FQDN 或 IP 地址以及其他所需信息。</block>
+  <block id="d42781d3bdc329779f16188aebafecfb" category="paragraph">要配置 Edge 实例，请完成以下步骤：</block>
+  <block id="3f613da6fbaad97f60fb7f4a76375fce" category="list-text">单击初始配置助手的 " 边缘配置步骤 " 部分中列出的未选中的核心配置步骤旁边的 * 执行 * 。此时将打开一个新选项卡 GFC Edge ，并显示 _Core Instances_ 部分。</block>
+  <block id="b22c518615ec9ad2d284d9db17dd5478" category="list-text">提供全局文件缓存核心服务器的 * Cloud Fabric ID* 。Cloud Fabric ID 通常是后端文件服务器的 NetBIOS 名称或地理位置。</block>
+  <block id="a1d97ace42e20334c6b558a775c5cab5" category="list-text">提供全局文件缓存核心服务器的 * FQDN/IP 地址 * ：</block>
+  <block id="bd8d6ce57c654a9f44359514cebac51f" category="list-text">（可选）选中 * ssl* 复选框，为从边缘到核心的增强型加密启用 SSL 支持。</block>
+  <block id="2e179b1488ac6d422c9002d1e13a2986" category="list-text">输入用户名和密码，这是核心上使用的服务帐户的凭据。</block>
+  <block id="2e4aad875e4cef5a5e02492ce9a89a6e" category="list-text">单击 * 添加 * 确认添加全局文件缓存核心设备。此时将显示一个确认框。单击 * 确定 * 将其取消。</block>
+  <block id="879b656923e07668c9d7d7bcb6fd22ac" category="inline-image-macro">显示用于标识要使用的全局文件缓存核心的 Edge 条目的屏幕截图。</block>
+  <block id="13ff9fbb09b57bcfc8d87be9e7851122" category="paragraph"><block ref="13ff9fbb09b57bcfc8d87be9e7851122" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="169352a3c3e0c62d91f81a540c0fe107" category="section-title">更新全局文件缓存边缘软件</block>
+  <block id="cc59acb2cd25bca513bf7379e4821900" category="paragraph">全局文件缓存会频繁发布软件更新，包括修补程序，增强功能或新特性 / 功能。尽管虚拟模板（` .OVA` 和 ` .VHD` ）映像包含最新版本的全局文件缓存软件，但 NetApp 支持下载门户可能会提供较新版本。</block>
+  <block id="d1ed6d5a3a4c1d25ed993783410dd553" category="paragraph">确保全局文件缓存实例使用最新版本。</block>
+  <block id="9ea700586e6a2fe161b85a652d52a229" category="admonition">此软件包也可用于在 Microsoft Windows Server 2016 Standard 或 Datacenter 版本， Windows Server 2019 Standard 或 Datacenter 版本上进行原始安装，或者用作升级策略的一部分。</block>
+  <block id="25bc0eee1694414be6f3b78809b62dc3" category="paragraph">您可以在下面找到更新全局文件缓存安装包所需的步骤：</block>
+  <block id="4e382ccd8141ced17b09bcf1f768c0ef" category="list-text">将最新安装软件包保存到所需的 Windows Server 实例后，双击该软件包以运行安装可执行文件。</block>
+  <block id="0ec3cc3f54335b1e013a49736d81bd26" category="list-text">单击 * 下一步 * 继续此过程。</block>
+  <block id="3dcb2e1a782d534491a8c818a67ce2ad" category="list-text">单击 * 下一步 * 继续。</block>
+  <block id="120ede641a2a4f4deb9c2f007fb44d9e" category="list-text">接受许可协议并单击 * 下一步 * 。</block>
+  <block id="93e4479094af97aa27b4d18ae90d4dd7" category="list-text">选择所需的安装目标位置。</block>
+  <block id="7a471b1e4141c6cec5dcf9437bfb622d" category="paragraph">NetApp 建议您使用默认安装位置。</block>
+  <block id="11372cbdd1b9df475379b5812c09cf46" category="list-text">选择开始菜单文件夹。</block>
+  <block id="366cc1d4ff6cff6676cf51ea1a645ab0" category="list-text">验证您的安装选择，然后单击 * 安装 * 开始安装。</block>
+  <block id="ca226cca3bd1375b5e9fbcf3bd9cb3be" category="paragraph">安装过程将开始。</block>
+  <block id="749c0e89c28cfa8efa0ef88d80e309b9" category="list-text">安装完成后，根据提示重新启动服务器。</block>
+  <block id="a75f59b7ae683d16a9279c8eec69424a" category="paragraph">有关全局文件缓存边缘高级配置的详细信息，请参见<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block>。</block>
+  <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
+  <block id="c59ae8d7beeb519a23478ab048af482c" category="paragraph"><block ref="c59ae8d7beeb519a23478ab048af482c" category="inline-link-macro-rx"></block></block>
+  <block id="6f2ac1cf1da8ec34232c651d4bba0149" category="paragraph"><block ref="6f2ac1cf1da8ec34232c651d4bba0149" category="inline-link-macro-rx"></block></block>
+  <block id="4940124e8487cb4ea36f1511a195cf66" category="inline-link-macro">有关 Cloud Manager 3.9 的注意事项</block>
+  <block id="c069fcc68c5dfa73ccc99924c836cae9" category="list-text"><block ref="c069fcc68c5dfa73ccc99924c836cae9" category="inline-link-macro-rx"></block></block>
+  <block id="82d6d852e451cd6267366962a46a2505" category="inline-link-macro">全局文件缓存通知</block>
+  <block id="fbbe13dd9588de5f06be4fa1584d51bb" category="list-text"><block ref="fbbe13dd9588de5f06be4fa1584d51bb" category="inline-link-macro-rx"></block></block>
+  <block id="98e243361a5fc5b92ef589f00fcfa177" category="summary">在云和远程办公室中部署全局文件缓存之前，您需要了解许多要求。</block>
+  <block id="e9b776ca4aec81050e673f885b2eac06" category="doc">开始部署全局文件缓存之前</block>
+  <block id="cd738516a0c7368cddca5d2174fbd3ce" category="section-title">全局文件缓存核心设计注意事项</block>
+  <block id="6e85eb06ef3edf77062f6d45c1910526" category="paragraph">根据您的要求，您可能需要部署一个或多个全局文件缓存核心实例来创建全局文件缓存网络结构。核心实例可用作分布式全局文件缓存边缘实例与数据中心文件服务器资源（例如文件共享，文件夹和文件）之间的流量 COP 。</block>
+  <block id="12b3668e4ae5e9987b7658b649439e54" category="paragraph">在设计全局文件缓存部署时，您需要确定在扩展性，资源可用性和冗余方面适合您的环境的因素。全局文件缓存核心可通过以下方式进行部署：</block>
+  <block id="5d60d6afb236f653125b44b76be39ca9" category="list-text">GFC 核心独立实例</block>
+  <block id="3f56cdce3a042ceab7f4ba6e1cf5f6f7" category="list-text">GFC 核心负载分布式设计（冷备用）</block>
+  <block id="628a4a2f6eaf1d1281369e04da7f5585" category="paragraph">请参见 <block ref="dff9f26728968e7b308d7b9ca46f5bdd" category="inline-xref-macro-rx"></block> 要了解每个配置可以支持的最大 Edge 实例数和用户总数，请执行以下操作：</block>
+  <block id="80155a6f9fd1f47a51c699a497c70846" category="paragraph">请咨询您的全球文件缓存解决方案工程师，以讨论适用于您的企业部署的最佳方案。</block>
+  <block id="060637ec73a717e3bdfa4db9addbef35" category="paragraph">在配置初始系统时，您需要牢记一些规模估算准则比率。在累积了一些使用历史记录之后，您应重新访问这些比率，以确保以最佳方式使用系统。其中包括：</block>
+  <block id="c85ad4e5fc3990ca78cff80f757ea740" category="list-text">全局文件缓存边缘 / 核心比率</block>
+  <block id="b8db548470197473b60a31cf63235132" category="list-text">分布式用户 / 全局文件缓存边缘比率</block>
+  <block id="03e688bc8022fab0a6352ae303a4c929" category="list-text">分布式用户 / 全局文件缓存核心比率</block>
+  <block id="21b98a9bfa32dac32af60fe74c7fc07c" category="section-title">每个核心实例的边缘实例数</block>
+  <block id="b19ff7ea43400c1c390961f4ab3a1b7f" category="paragraph">我们的准则建议，每个全局文件缓存核心实例最多 10 个 Edge 实例，每个全局文件缓存核心实例最多 20 个边缘。这在很大程度上取决于最常见工作负载的类型和平均文件大小。在某些情况下，对于较为常见的工作负载，您可以为每个核心添加更多的边缘实例，但在这些情况下，您应联系 NetApp 支持部门，根据文件集的类型和大小正确调整边缘和核心实例的数量。</block>
+  <block id="2df25ab39ccf7d8a937806af504ab29c" category="admonition">您可以同时利用多个全局文件缓存边缘和核心实例根据需求横向扩展基础架构。</block>
+  <block id="9aad1322fc19ca5e66c23b65ad4ae5fe" category="section-title">每个 Edge 实例的并发用户数</block>
+  <block id="30ae6413ab8cb3af21bb3ef666c57dbe" category="paragraph">全局文件缓存边缘可处理缓存算法和文件级差分方面的繁重工作。一个全局文件缓存边缘实例可为每个专用物理边缘实例最多 400 个用户提供服务，而对于专用虚拟部署，最多可为 200 个用户提供服务。这在很大程度上取决于最常见工作负载的类型和平均文件大小。对于较大的协作文件类型，请引导每个全局文件缓存边缘的最大用户数的 50% 下限（具体取决于物理或虚拟部署）。对于平均文件大小小于 1 MB 的更常见 Office 项目，请参考每个全局文件缓存边缘的 100% 用户上限（具体取决于物理或虚拟部署）。</block>
+  <block id="52fd284844f67b8a08a9e803590ccd4c" category="admonition">全局文件缓存边缘会检测它是在虚拟实例还是物理实例上运行，它会将与本地虚拟文件共享的 SMB 连接数限制为最多 200 或 400 个并发连接。</block>
+  <block id="9677e276eaf903d4a0b5da856ceb3bdc" category="section-title">每个核心实例的并发用户数</block>
+  <block id="8de20cb9eef18978ba168ebc839695b7" category="paragraph">全局文件缓存核心实例具有极高的可扩展性，建议每个核心同时使用 3 ， 000 个用户。这在很大程度上取决于最常见工作负载的类型和平均文件大小。</block>
+  <block id="b878b843693a16500d3da98423bf22b6" category="paragraph">本节所述的前提条件适用于云中安装的组件：全局文件缓存管理服务器和全局文件缓存核心。</block>
+  <block id="b51baa22d09e6c9f1931a23ebef6347d" category="paragraph">本节介绍了全局文件缓存边缘前提条件 <block ref="dc13b95521107f0e6174e0d4f00812b4" category="inline-link-macro-rx"></block>。</block>
+  <block id="62cfe6527ad2ad6b51cb8ccaf7bf34f2" category="section-title">Cloud Manager 实例</block>
+  <block id="da853f2b1b70f8830685d4d1ae8096ca" category="inline-link">适用于 Azure 的 Cloud Manager 策略</block>
+  <block id="37d08d548f640449b7f0187fd2333529" category="paragraph">使用适用于 Azure 的 Cloud Volumes ONTAP 作为存储平台时，请确保 Cloud Manager 具有最新所示的权限<block ref="71541056249333863ccd60a02c145e24" category="inline-link-rx"></block>。</block>
+  <block id="d7bcfb31085ad76548d1b7a16fff01fb" category="paragraph">默认情况下，新创建的实例将具有所有所需权限。如果您部署的实例早于 3.8.7 版（ 2020 年 8 月 3 日），则需要添加这些项。</block>
+  <block id="891a589deeeaf68084584fbfae4c3ae7" category="section-title">存储平台（卷）</block>
+  <block id="e6da02886af47462759989718f62ea49" category="paragraph">在这种情况下，后端存储平台（即已部署的 Cloud Volumes ONTAP 实例）应显示 SMB 文件共享。要通过全局文件缓存公开的任何共享都必须在共享级别允许 Everyone 组完全控制，同时通过 NTFS 权限限制权限。</block>
+  <block id="152468376710017819b274fb14a70617" category="paragraph">如果尚未在 Cloud Volumes ONTAP 实例上至少设置一个 SMB 文件共享，则需要准备好以下信息，以便可以在安装期间配置此信息：</block>
+  <block id="981640f9fb09fe09a937c7da955d9dfb" category="list-text">Active Directory 域名，名称服务器 IP 地址， Active Directory 管理员凭据。</block>
+  <block id="794cb058ebafe2e7b0df56dea2e389d4" category="list-text">要创建的卷的名称和大小，要创建卷的聚合的名称以及共享名称。</block>
+  <block id="5a546cf8c7438d3947e0f034bfe5f5af" category="inline-link">管理现有聚合</block>
+  <block id="19bd3fbf3c96e46437e41367e7026677" category="paragraph">建议卷的大小足以容纳应用程序的总数据集，并能够随着数据集的增长相应地进行扩展。如果工作环境中有多个聚合，请参见<block ref="39d18222bad8d4a70367cc75016bb156" category="inline-link-rx"></block> 确定哪个聚合可为新卷提供最多的可用空间。</block>
+  <block id="a47494fbd5157213a61c49892644da68" category="paragraph">此全局文件缓存管理服务器需要通过 HTTPS （ TCP 端口 443 ）进行外部访问，才能连接到云提供商订阅服务并访问以下 URL ：</block>
+  <block id="224c646ebc1a3e88e1cdb258481bcfd0" category="inline-link"><block ref="224c646ebc1a3e88e1cdb258481bcfd0" category="inline-link-rx"></block></block>
+  <block id="f12ef780b481a5c2973143651b98129e" category="list-text"><block ref="f12ef780b481a5c2973143651b98129e" category="inline-link-rx"></block></block>
+  <block id="d86ce3b95ad0f00efb5ef5d097d103df" category="inline-link"><block ref="d86ce3b95ad0f00efb5ef5d097d103df" category="inline-link-rx"></block></block>
+  <block id="87fbbc712e9b519806558e6330b1d157" category="list-text"><block ref="87fbbc712e9b519806558e6330b1d157" category="inline-link-rx"></block></block>
+  <block id="e1b81ed17087b40845c09ad31044d74c" category="paragraph">要使全局文件缓存软件正常运行，必须从任何 WAN 优化设备或防火墙限制策略中排除此端口。</block>
+  <block id="3976f666cc09b4e1bed026524e9aa1e0" category="paragraph">此外，全局文件缓存管理服务器还要求实例（例如， GFC-MS1 ）具有唯一（地理）的 NetBIOS 名称。</block>
+  <block id="87dd764d6a7a2734e0def11b1ebbacef" category="admonition">一个管理服务器可以支持部署在不同工作环境中的多个全局文件缓存核心实例。从 Cloud Manager 部署时，每个工作环境都有自己单独的后端存储，并且不包含相同的数据。</block>
+  <block id="9e10323c703b812588b3825aa73be595" category="paragraph">此全局文件缓存核心侦听 TCP 端口范围 6618-6630 。根据您的防火墙或网络安全组（ Network Security Group ， NSG ）配置，您可能需要明确允许通过入站端口规则访问这些端口。此外，要使全局文件缓存软件正常运行，必须从任何 WAN 优化设备或防火墙限制策略中排除这些端口。</block>
+  <block id="7ca7ac09873d3ac9e6ed2cad23d4c9d0" category="paragraph">全局文件缓存核心要求包括：</block>
+  <block id="2a14e1d9fe1117503124653da7bc0c2e" category="list-text">实例的唯一（地理） NetBIOS 名称（例如， GFC-Core1 ）</block>
+  <block id="012be1a704679516268472af83c3224d" category="list-text">Active Directory domain name</block>
+  <block id="55d6dd2b536a0d3cd15e567388a30259" category="list-text">全局文件缓存实例应加入 Active Directory 域。</block>
+  <block id="b73b5e5d58319749ac12c40a7fc0ee3c" category="list-text">全局文件缓存实例应在全局文件缓存特定组织单位（ OU ）中进行管理，并从继承的公司 GPO 中排除。</block>
+  <block id="778a4fd3547dad21365efb5178ee174b" category="list-text">服务帐户。此全局文件缓存核心上的服务作为特定域用户帐户运行。此帐户（也称为服务帐户）必须在将与全局文件缓存核心实例关联的每个 SMB 服务器上具有以下权限：</block>
+  <block id="36f55accbc89c027e3d1b77aa8958616" category="list-text">配置的服务帐户必须是域用户。</block>
+  <block id="2decbb79727266a2a228917663cdce4a" category="paragraph">根据网络环境中的限制级别和 GPO ，此帐户可能需要域管理员权限。</block>
+  <block id="1a8ec43728ef4fec5d16fa2c32372467" category="list-text">它必须具有 " 运行即服务 " 权限。</block>
+  <block id="de445129d8b81820aff750dbf9c0b34c" category="list-text">密码应设置为 " 永不过期 " 。</block>
+  <block id="e334178450758be114591fc0de3df592" category="list-text">应禁用（未选中）帐户选项 " 用户必须在下次登录时更改密码 " 。</block>
+  <block id="5cc0aeb91cd7a714b36c32db7ae91a01" category="list-text">它必须是后端文件服务器内置备份操作员组的成员（通过 Cloud Manager 部署时会自动启用此功能）。</block>
+  <block id="51a2657902a94cb28cb094cca2f5d9ea" category="section-title">许可证管理服务器</block>
+  <block id="a667680dd0efe4957987b134614b1fef" category="list-text">全球文件缓存许可证管理服务器（ LMS ）应配置在 Microsoft Windows Server 2016 标准版或数据中心版或 Windows Server 2019 标准版或数据中心版上，最好配置在数据中心或云中的全局文件缓存核心实例上。</block>
+  <block id="a9556fa226a4c90b2c33f740d860b4ba" category="list-text">如果需要单独的全局文件缓存 LMS 实例，则需要在原始 Microsoft Windows Server 实例上安装最新的全局文件缓存软件安装包。</block>
+  <block id="e9951050c20c1ac5ae3d064f680e267d" category="list-text">LMS 实例需要能够使用 HTTPS （ TCP 端口 443 ）连接到订阅服务（ Azure 服务 / 公有 Internet ）。</block>
+  <block id="e3032cd499830d29c8b4c7009b1cd6b7" category="list-text">核心和边缘实例需要使用 HTTPS （ TCP 端口 443 ）连接到 LMS 实例。</block>
+  <block id="f36d42acab571ec85ce6cc8247ef2ba9" category="section-title">网络（外部访问）</block>
+  <block id="20a8d60a21a9b562a48c146d4ec52a58" category="paragraph">全局文件缓存 LMS 需要通过 HTTPS （ TCP 端口 443 ）对以下 URL 进行外部访问。</block>
+  <block id="6422529c869860da493cea06fbd91918" category="list-text">如果您使用的是基于 GFC 订阅的许可：</block>
+  <block id="fec56f9aaa9d989eef75b885dbdd8e10" category="list-text">https://rest.zuora.com/v1/subscriptions/&lt;subscription-no&gt;</block>
+  <block id="c8696311709135d3481a11098f1990c8" category="list-text">https://rest.zuora.com/oauth/token</block>
+  <block id="8570c6f475d9487aea1b717c73095257" category="list-text">如果您使用的是基于 NetApp NSS 的许可：</block>
+  <block id="761932af381c1c2dde508ecccbc80d98" category="list-text">https://login.netapp.com</block>
+  <block id="a5085b0443e5d8b1f1dbe592e35a2b60" category="list-text">https://login.netapp.com/ms_oauth/oauth2/endpoints</block>
+  <block id="8af6b191c0a6466d92047c2ff20cacd2" category="list-text">https://login.netapp.com/ms_oauth/oauth2/endpoints/oauthservice/tokens</block>
+  <block id="7810d0ca3a66369587e6a56cf4192b2c" category="list-text">如果您使用的是基于 NetApp 传统的许可：</block>
+  <block id="90fa5a5ac66630ff8491eb335e51bdc9" category="list-text">https://talonazuremicroservices.azurewebsites.net</block>
+  <block id="5ed3a104f8850c15acaec08814cbd9b4" category="list-text">https://talonlicensing.table.core.windows.net</block>
+  <block id="8503ae56f9a302bb9d549115b584b0fc" category="list-text">防火墙：应允许在全局文件缓存边缘和核心实例之间使用 TCP 端口。</block>
+  <block id="6c912ddbaed2bf80fe819c9899e03b7d" category="list-text">全局文件缓存 TCP 端口： 443 （ HTTPS ）， 6618 – 6630 。</block>
+  <block id="658440d8d27188f150f9c72390090606" category="summary">查看全局文件缓存中已修复的问题。</block>
+  <block id="2ad3d2af445ee46b95129c175cce6515" category="doc">已修复全局文件缓存中的问题</block>
+  <block id="dc7104ff29582271cbda56277263eec5" category="list-text">配置 UI （ Optimus ）经过了增强，可在添加预填充作业时验证日期字段条目。</block>
+  <block id="65c0ed4b8ed88949fa21fa5a60be6ddb" category="list-text">预填充功能得到了增强，可监控缓存利用率，如果缓存使用量接近缓存清理程序参数，则会跳过填充。</block>
+  <block id="f74032e7a801122d16bdf48f04518b8a" category="list-text">消除了使用策略配置在本地运行的许可证管理服务器（ LMS ）服务的硬依赖关系。</block>
+  <block id="1835c27cfc517067592779b50d13190c" category="list-text">GFC 内核驱动程序经过了增强，可避免 Windows Server 2016/2019 中的 SMB 服务器服务崩溃。</block>
+  <block id="5876df88731069c35bfd4f3ea17e7db0" category="list-text">修复了 LMS 服务中的异常。</block>
+  <block id="7e2a74fd4a9764c984dceb6c8d6edcf2" category="list-text">LMS ， LMC 和 TappN 服务的服务启动类型从 " 自动延迟 " 更改为 " 自动 " 。</block>
+  <block id="f207ae57dc9dfe83885fb108696cb88c" category="list-text">现在，配置 UI 会在编辑预填充页面中正确显示边缘主机名。</block>
+  <block id="9437dcfd300c52c159a6d4703daa54ad" category="list-text">修复了在许可证注册期间解析来自 NetApp 许可证订阅服务器的 json 响应的问题描述。</block>
+  <block id="e8cdf46b30eda1b6da8eed70347d25ac" category="list-text">预填充（ TappN ）日志经过改进，可记录所有文件的文件传输状态。</block>
+  <block id="491d6073a5e0c94c93deb36c81be5dbe" category="section-title">2021 年 4 月 7 日（ 1.0.4 版）</block>
+  <block id="8745f104024449a4797839f221e192a2" category="list-text">QoS 问题描述已得到修复，其中 QoS 参数应用于 _all_ 用户，而不仅仅是超出限制的用户。</block>
+  <block id="0eb37d2733eb2ea3eb40f8c24e8c6400" category="list-text">现在，系统会先验证 NSS 凭据，然后再将其应用于许可系统。</block>
+  <block id="b41a6700f4ecdc68672c9c11626a93f4" category="list-text">GFC 软件与某些防病毒软件之间的竞争情况已修复。</block>
+  <block id="c1b67e4a4c76817df9aca841e83485fe" category="list-text">如果在丢弃租赁操作期间违反了锁定层次结构，则不再发生崩溃。</block>
+  <block id="3f4758f7775b468f31a333f97ab2c2d3" category="list-text">只有基于云的许可证管理服务器（ LMS ）才允许进行 NetApp 许可证注册和基于 GFC 订阅的注册。内部 LMS 应使用传统许可。</block>
+  <block id="2644e4a83d0eedbd704d3e114114e275" category="list-text">现在，如果配置期间 License Manager 客户端服务（ LMC ）使用主机名而不是 IP 地址作为 LMS ，则配置 UI 会预先添加作业。</block>
+  <block id="e5c0b1995108f32cef1dcfc39528d164" category="summary">使用 NetApp 的智能全局文件缓存为分布式员工实现实时全局文件共享。</block>
+  <block id="59d1b154ff5b7aa340f3bb85aa0d59f7" category="doc">全局文件缓存文档</block>
+  <block id="fe8d9a8dc9b5c669ccbe68b53409dd26" category="summary">您需要对用户进行有关通过全局文件缓存访问共享文件的最佳实践的培训。</block>
+  <block id="1953aca0238eceda58cb0a10075ecc1e" category="doc">最终用户培训</block>
+  <block id="1c616cd5519ad90d3152c98868c34e70" category="paragraph">这是全局文件缓存部署的最后阶段，即最终用户实施阶段。</block>
+  <block id="6b95ba66ea08c0432bc8297ec8127efc" category="paragraph">为了准备和简化最终用户的入职流程，请使用下面的电子邮件模板帮助您向最终用户介绍在 " 中央数据 " 环境中工作的意义。这将帮助您的用户充分利用全局文件缓存解决方案的所有优势。我们还发布了一个视频，可在需要时供 " 培训 " 用户共享。</block>
+  <block id="939757145bf8db56f7d91bd08f60d0c6" category="paragraph">自定义以下资源并将其转发给最终用户，以便为部署做好准备：</block>
+  <block id="538b051cfad962b73dbfb2f27206b1e6" category="inline-link-macro">最终用户培训视频</block>
+  <block id="d80ffb2faea839790978a15ab8b3e3a3" category="list-text">用户培训视频<block ref="5abf68d2342a0e9a07d3867b3b4e7d57" category="inline-link-macro-rx"></block></block>
+  <block id="059c1b7392e6a6c2ea4557fa71fe51b1" category="inline-link-macro">MAC 电子邮件模板（ .emltpl ）</block>
+  <block id="fb49f005426933770b6f22cd456f0e84" category="list-text">电子邮件模板<block ref="c829b8c00e5f8eb8a2fd450f41ab6401" category="inline-link-macro-rx"></block></block>
+  <block id="7a499edce06c189532c243616b7132a3" category="inline-link-macro">Windows 电子邮件模板（ .msg ）</block>
+  <block id="13879d09fb35e1a9c0fd7f6435bfa323" category="paragraph"><block ref="13879d09fb35e1a9c0fd7f6435bfa323" category="inline-link-macro-rx"></block></block>
+  <block id="b9c5f151d07a94019ba26f5d3579bcf9" category="inline-link-macro">Word 文档（ .docx ）</block>
+  <block id="a314a20204b96ce855b4edecf455498b" category="list-text">入职沟通<block ref="ec13a4ed87a907c97165059568a0b0f6" category="inline-link-macro-rx"></block></block>
+  <block id="9084910038dd88a4c2a9aea7b0c1cd9e" category="paragraph">请参见中的第 13 章<block ref="0f1e08336ba0ac25d056248c22c33aaf" category="inline-link-rx"></block> 以获取其他材料。</block>
+  <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。</block>
+  <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
+  <block id="d53e2559d6ace0e907fc57192bf286b6" category="paragraph"><block ref="d53e2559d6ace0e907fc57192bf286b6" category="inline-link-macro-rx"></block></block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
+  <block id="e0533a7cc48f1b65dc6efe4d93506732" category="sidebar">全局文件缓存文档</block>
+  <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
+  <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
+  <block id="69464e68a5cdd0b54694ac92276fa1a3" category="sidebar">已修复的问题</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">入门</block>
+  <block id="c28c542272e0ada6852f0e1b09e4f156" category="sidebar">全局文件缓存前提条件</block>
+  <block id="7b365d05ca091321d4b311a43f5e5b0c" category="sidebar">部署并许可全局文件缓存</block>
+  <block id="aee69c08ad0cfcd1480c87bd9aff9288" category="sidebar">全局文件缓存边缘前提条件</block>
+  <block id="9d94c3aa32a0b32a0fa46fa0de0e1e81" category="sidebar">部署全局文件缓存边缘</block>
+  <block id="f7b80a79ecfae0fe3727cb596722172e" category="sidebar">使用全局文件缓存</block>
+  <block id="0adc03eac86772ad2c75c8f140be417e" category="sidebar">知识和支持</block>
+  <block id="5fef629b836b60819e0c0ce49cd2b9d7" category="sidebar">新增功能</block>
+  <block id="98121bd163ebeee7679c81cb42cf7994" category="sidebar">部署组件</block>
+  <block id="948b7b04e4691581ca1041a28de513f9" category="sidebar">将 Cloud Volumes ONTAP 部署为存储平台</block>
+  <block id="ab6b625ee85fc0d817e5d790e3080568" category="sidebar">部署全局文件缓存管理服务器和全局文件缓存核心</block>
+  <block id="e289bcbad000bdd54bcb8ae57eec662f" category="sidebar">培训用户</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客社区</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
+  <block id="ff6c37cbc252e306a6b4e390ec13cbc1" category="sidebar">Cloud Central 博客</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+  <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">其他资源</block>
+  <block id="cc81b1698333ba727fd5bde305c3cf08" category="sidebar">Cloud Central 用例</block>
+</blocks>

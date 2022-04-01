@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head class="at-element-marker">
+  <title>开始部署全局文件缓存之前 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="开始部署全局文件缓存之前 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/zh-cn/cloud-manager-file-cache/concept-before-you-begin-to-deploy-gfc.html" />
+	<meta property="og:description" content="在云和远程办公室中部署全局文件缓存之前，您需要了解许多要求。" />
+  <meta property="og:image" content="https://docs.netapp.com/zh-cn/cloud-manager-file-cache/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="在云和远程办公室中部署全局文件缓存之前，您需要了解许多要求。">
+  <meta name="keywords" content=" global file cache, core, edge, management server"><!-- Icons -->
+  <link rel="icon" href="/zh-cn/cloud-manager-file-cache/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/zh-cn/cloud-manager-file-cache/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-file-cache/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-file-cache/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-file-cache/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-file-cache/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/zh-cn/cloud-manager-file-cache/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-file-cache/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-file-cache/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-file-cache/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/zh-cn/cloud-manager-file-cache/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/zh-cn/cloud-manager-file-cache/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-file-cache/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-file-cache/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-file-cache/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/zh-cn/cloud-manager-file-cache/css/tabbed-blocks.css" type="text/css">
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-file-cache/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/zh-cn/cloud-manager-file-cache/css/product-family.css' type="text/css">
+  <script src='/zh-cn/cloud-manager-file-cache/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/zh-cn/cloud-manager-file-cache/js/na-search.js'></script><script src='/zh-cn/cloud-manager-file-cache/js/na-pagenav.js'></script><link rel='stylesheet' href='/zh-cn/cloud-manager-file-cache/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/zh-cn/cloud-manager-file-cache/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/zh-cn/cloud-manager-file-cache/js/na-utility.js'></script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/toc.js'></script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/version-dropdown.js'></script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/FileSaver.min.js'></script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/jszip-utils.min.js'></script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/jszip.min.js'></script>
+  <script src='/zh-cn/cloud-manager-file-cache/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-file-cache/issues/new?body=Page%3A%20[开始部署全局文件缓存之前](https://docs.netapp.com/zh-cn/cloud-manager-file-cache/concept-before-you-begin-to-deploy-gfc.html)" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-file-cache/images/discuss-sm.svg" class="github-icon" />请求文档变更</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-file-cache/blob/main/concept-before-you-begin-to-deploy-gfc.adoc" class="page-nav-contribute-link" role="button"><img src="/zh-cn/cloud-manager-file-cache/images/edit-sm.svg" class="github-icon" />在 GitHub 上编辑</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/zh-cn/cloud-manager-file-cache/images/article-sm.svg" class="github-icon" />提供者指南</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">在此页面上</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">产品和解决方案</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">支持和培训</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">云中心</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">社区</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">日志</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">客户案例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">联系人</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/zh-cn/cloud-manager-file-cache/search.html"
+          data-type="widget" 
+          data-placeholder="搜索文档" 
+          data-no-results-found="未找到与 {query} 匹配的结果。" 
+          data-did-you-mean="搜索 {suggestion}。" 
+          data-no-results-found-did-you-mean="未找到与 {query} 匹配的结果。您是否要搜索 {suggestion}?" 
+          data-results-found="找到 {hitCount} 个结果"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">简体中文</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-file-cache/concept-before-you-begin-to-deploy-gfc.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/cloud-manager-file-cache/concept-before-you-begin-to-deploy-gfc.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-file-cache/concept-before-you-begin-to-deploy-gfc.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-file-cache/concept-before-you-begin-to-deploy-gfc.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/zh-cn/cloud-manager-file-cache/images/pdf.png" width="16" height="16"/>可用的 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/zh-cn/cloud-manager-file-cache/pdfs/fullsite-sidebar/全局文件缓存文档.pdf" >
+          <img src="/zh-cn/cloud-manager-file-cache/images/pdf.png" width="16" height="16"/>此文档站点的 PDF</a>
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-file-cache/pdfs/sidebar/发行说明.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-file-cache/images/pdf.png" width="16" height="16"/>
+            发行说明
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-file-cache/pdfs/sidebar/入门.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-file-cache/images/pdf.png" width="16" height="16"/>
+            入门
+          </a>
+          
+
+
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/zh-cn/cloud-manager-file-cache/pdfs/pages/concept-before-you-begin-to-deploy-gfc.pdf" >
+    <img src="/zh-cn/cloud-manager-file-cache/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-file-cache/pdfs/sidebar/使用全局文件缓存.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-file-cache/images/pdf.png" width="16" height="16"/>
+            使用全局文件缓存
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/zh-cn/cloud-manager-file-cache/pdfs/sidebar/知识和支持.pdf" 
+            
+          >
+            <img src="/zh-cn/cloud-manager-file-cache/images/pdf.png" width="16" height="16"/>
+            知识和支持
+          </a>
+          
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/zh-cn/cloud-manager-file-cache/images/pdf-zip.png" width="16" height="16"/>
+      <pre>收集单独的 PDF 文档<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
+        所有 Cloud Manager 文档
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/index.html">
+        全局文件缓存文档
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 发行说明</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/whats-new.html">
+        新增功能
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/fixed-issues.html">
+        已修复的问题
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 入门</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/concept-gfc.html">
+        了解全局文件缓存
+      </a></li><li class="  active "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/concept-before-you-begin-to-deploy-gfc.html">
+        全局文件缓存前提条件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/task-gfc-getting-started.html">
+        部署并许可全局文件缓存
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/download-gfc-resources.html">
+        全局文件缓存边缘前提条件
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/task-deploy-gfc-edge-instances.html">
+        部署全局文件缓存边缘
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 使用全局文件缓存</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/concept-gfc-enduser-training.html">
+        最终用户培训
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/reference-gfc-additional-information.html">
+        追加信息
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 知识和支持</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/task-support-registration.html">
+        注册以获得支持
+      </a></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/task-get-help.html">
+        获取帮助
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/zh-cn/cloud-manager-file-cache/legal-notices.html">
+        法律声明
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/zh-cn/cloud/">云文档</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/zh-cn/cloud-manager-file-cache/">Global&nbsp;File&nbsp;Cache</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 简体中文版经机器翻译而成，仅供参考。如与英语版出现任何冲突，应以英语版为准。 </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">开始部署全局文件缓存之前</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-04-01 18:08:49 +0000">04/01/2022</time>
+    
+  
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>在云和远程办公室中部署全局文件缓存之前，您需要了解许多要求。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="全局文件缓存核心设计注意事项">全局文件缓存核心设计注意事项</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>根据您的要求，您可能需要部署一个或多个全局文件缓存核心实例来创建全局文件缓存网络结构。核心实例可用作分布式全局文件缓存边缘实例与数据中心文件服务器资源（例如文件共享，文件夹和文件）之间的流量 COP 。</p>
+</div>
+<div class="paragraph">
+<p>在设计全局文件缓存部署时，您需要确定在扩展性，资源可用性和冗余方面适合您的环境的因素。全局文件缓存核心可通过以下方式进行部署：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>GFC 核心独立实例</p>
+</li>
+<li>
+<p>GFC 核心负载分布式设计（冷备用）</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>请参见 <a href="#Sizing guidelines">[Sizing guidelines]</a> 要了解每个配置可以支持的最大 Edge 实例数和用户总数，请执行以下操作：</p>
+</div>
+<div class="paragraph">
+<p>请咨询您的全球文件缓存解决方案工程师，以讨论适用于您的企业部署的最佳方案。</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="规模估算准则">规模估算准则</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>在配置初始系统时，您需要牢记一些规模估算准则比率。在累积了一些使用历史记录之后，您应重新访问这些比率，以确保以最佳方式使用系统。其中包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>全局文件缓存边缘 / 核心比率</p>
+</li>
+<li>
+<p>分布式用户 / 全局文件缓存边缘比率</p>
+</li>
+<li>
+<p>分布式用户 / 全局文件缓存核心比率</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="每个核心实例的边缘实例数">每个核心实例的边缘实例数</h3>
+<div class="paragraph">
+<p>我们的准则建议，每个全局文件缓存核心实例最多 10 个 Edge 实例，每个全局文件缓存核心实例最多 20 个边缘。这在很大程度上取决于最常见工作负载的类型和平均文件大小。在某些情况下，对于较为常见的工作负载，您可以为每个核心添加更多的边缘实例，但在这些情况下，您应联系 NetApp 支持部门，根据文件集的类型和大小正确调整边缘和核心实例的数量。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-file-cache/images/note.svg" alt="注">
+</td>
+<td class="content">
+您可以同时利用多个全局文件缓存边缘和核心实例根据需求横向扩展基础架构。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="每个-edge-实例的并发用户数">每个 Edge 实例的并发用户数</h3>
+<div class="paragraph">
+<p>全局文件缓存边缘可处理缓存算法和文件级差分方面的繁重工作。一个全局文件缓存边缘实例可为每个专用物理边缘实例最多 400 个用户提供服务，而对于专用虚拟部署，最多可为 200 个用户提供服务。这在很大程度上取决于最常见工作负载的类型和平均文件大小。对于较大的协作文件类型，请引导每个全局文件缓存边缘的最大用户数的 50% 下限（具体取决于物理或虚拟部署）。对于平均文件大小小于 1 MB 的更常见 Office 项目，请参考每个全局文件缓存边缘的 100% 用户上限（具体取决于物理或虚拟部署）。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-file-cache/images/note.svg" alt="注">
+</td>
+<td class="content">
+全局文件缓存边缘会检测它是在虚拟实例还是物理实例上运行，它会将与本地虚拟文件共享的 SMB 连接数限制为最多 200 或 400 个并发连接。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="每个核心实例的并发用户数">每个核心实例的并发用户数</h3>
+<div class="paragraph">
+<p>全局文件缓存核心实例具有极高的可扩展性，建议每个核心同时使用 3 ， 000 个用户。这在很大程度上取决于最常见工作负载的类型和平均文件大小。</p>
+</div>
+<div class="paragraph">
+<p>请咨询您的全球文件缓存解决方案工程师，以讨论适用于您的企业部署的最佳方案。</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="前提条件">前提条件</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>本节所述的前提条件适用于云中安装的组件：全局文件缓存管理服务器和全局文件缓存核心。</p>
+</div>
+<div class="paragraph">
+<p>本节介绍了全局文件缓存边缘前提条件 <a href="download-gfc-resources.html#global-file-cache-edge-requirements">"此处"</a>。</p>
+</div>
+<div class="sect2">
+<h3 id="cloud-manager-实例">Cloud Manager 实例</h3>
+<div class="paragraph">
+<p>使用适用于 Azure 的 Cloud Volumes ONTAP 作为存储平台时，请确保 Cloud Manager 具有最新所示的权限 <a href="https://occm-sample-policies.s3.amazonaws.com/Policy_for_cloud_Manager_Azure_3.9.12.json" target="_blank" rel="noopener">"适用于 Azure 的 Cloud Manager 策略"</a>。</p>
+</div>
+<div class="paragraph">
+<p>默认情况下，新创建的实例将具有所有所需权限。如果您部署的实例早于 3.8.7 版（ 2020 年 8 月 3 日），则需要添加这些项。</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-json" data-lang="json">"Microsoft.Resources/deployments/operationStatuses/read",
+"Microsoft.Insights/Metrics/Read",
+"Microsoft.Compute/virtualMachines/extensions/write",
+"Microsoft.Compute/virtualMachines/extensions/read",
+"Microsoft.Compute/virtualMachines/extensions/delete",
+"Microsoft.Compute/virtualMachines/delete",
+"Microsoft.Network/networkInterfaces/delete",
+"Microsoft.Network/networkSecurityGroups/delete",
+"Microsoft.Resources/deployments/delete",</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="存储平台卷">存储平台（卷）</h3>
+<div class="paragraph">
+<p>在这种情况下，后端存储平台（即已部署的 Cloud Volumes ONTAP 实例）应显示 SMB 文件共享。要通过全局文件缓存公开的任何共享都必须在共享级别允许 Everyone 组完全控制，同时通过 NTFS 权限限制权限。</p>
+</div>
+<div class="paragraph">
+<p>如果尚未在 Cloud Volumes ONTAP 实例上至少设置一个 SMB 文件共享，则需要准备好以下信息，以便可以在安装期间配置此信息：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Active Directory 域名，名称服务器 IP 地址， Active Directory 管理员凭据。</p>
+</li>
+<li>
+<p>要创建的卷的名称和大小，要创建卷的聚合的名称以及共享名称。</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>建议卷的大小足以容纳应用程序的总数据集，并能够随着数据集的增长相应地进行扩展。如果工作环境中有多个聚合，请参见 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-storage.html" target="_blank" rel="noopener">"管理现有聚合"</a> 确定哪个聚合可为新卷提供最多的可用空间。</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="全局文件缓存管理服务器">全局文件缓存管理服务器</h3>
+<div class="paragraph">
+<p>此全局文件缓存管理服务器需要通过 HTTPS （ TCP 端口 443 ）进行外部访问，才能连接到云提供商订阅服务并访问以下 URL ：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://talonazuremicroservices.azurewebsites.net">"https://talonazuremicroservices.azurewebsites.net"</a></p>
+</li>
+<li>
+<p><a href="https://talonlicensing.table.core.windows.net">"https://talonlicensing.table.core.windows.net"</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>要使全局文件缓存软件正常运行，必须从任何 WAN 优化设备或防火墙限制策略中排除此端口。</p>
+</div>
+<div class="paragraph">
+<p>此外，全局文件缓存管理服务器还要求实例（例如， GFC-MS1 ）具有唯一（地理）的 NetBIOS 名称。</p>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<img src="/us-en/cloud-manager-file-cache/images/note.svg" alt="注">
+</td>
+<td class="content">
+一个管理服务器可以支持部署在不同工作环境中的多个全局文件缓存核心实例。从 Cloud Manager 部署时，每个工作环境都有自己单独的后端存储，并且不包含相同的数据。
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="全局文件缓存核心">全局文件缓存核心</h3>
+<div class="paragraph">
+<p>此全局文件缓存核心侦听 TCP 端口范围 6618-6630 。根据您的防火墙或网络安全组（ Network Security Group ， NSG ）配置，您可能需要明确允许通过入站端口规则访问这些端口。此外，要使全局文件缓存软件正常运行，必须从任何 WAN 优化设备或防火墙限制策略中排除这些端口。</p>
+</div>
+<div class="paragraph">
+<p>全局文件缓存核心要求包括：</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>实例的唯一（地理） NetBIOS 名称（例如， GFC-Core1 ）</p>
+</li>
+<li>
+<p>Active Directory domain name</p>
+<div class="ulist">
+<ul>
+<li>
+<p>全局文件缓存实例应加入 Active Directory 域。</p>
+</li>
+<li>
+<p>全局文件缓存实例应在全局文件缓存特定组织单位（ OU ）中进行管理，并从继承的公司 GPO 中排除。</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>服务帐户。此全局文件缓存核心上的服务作为特定域用户帐户运行。此帐户（也称为服务帐户）必须在将与全局文件缓存核心实例关联的每个 SMB 服务器上具有以下权限：</p>
+<div class="ulist">
+<ul>
+<li>
+<p>配置的服务帐户必须是域用户。</p>
+<div class="paragraph">
+<p>根据网络环境中的限制级别和 GPO ，此帐户可能需要域管理员权限。</p>
+</div>
+</li>
+<li>
+<p>它必须具有 " 运行即服务 " 权限。</p>
+</li>
+<li>
+<p>密码应设置为 " 永不过期 " 。</p>
+</li>
+<li>
+<p>应禁用（未选中）帐户选项 " 用户必须在下次登录时更改密码 " 。</p>
+</li>
+<li>
+<p>它必须是后端文件服务器内置备份操作员组的成员（通过 Cloud Manager 部署时会自动启用此功能）。</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="许可证管理服务器">许可证管理服务器</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>全球文件缓存许可证管理服务器（ LMS ）应配置在 Microsoft Windows Server 2016 标准版或数据中心版或 Windows Server 2019 标准版或数据中心版上，最好配置在数据中心或云中的全局文件缓存核心实例上。</p>
+</li>
+<li>
+<p>如果需要单独的全局文件缓存 LMS 实例，则需要在原始 Microsoft Windows Server 实例上安装最新的全局文件缓存软件安装包。</p>
+</li>
+<li>
+<p>LMS 实例需要能够使用 HTTPS （ TCP 端口 443 ）连接到订阅服务（ Azure 服务 / 公有 Internet ）。</p>
+</li>
+<li>
+<p>核心和边缘实例需要使用 HTTPS （ TCP 端口 443 ）连接到 LMS 实例。</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="网络外部访问">网络（外部访问）</h3>
+<div class="paragraph">
+<p>全局文件缓存 LMS 需要通过 HTTPS （ TCP 端口 443 ）对以下 URL 进行外部访问。</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>如果您使用的是基于 GFC 订阅的许可：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://rest.zuora.com/v1/subscriptions/&lt;subscription-no&gt" class="bare">https://rest.zuora.com/v1/subscriptions/&lt;subscription-no&gt</a>;</p>
+</li>
+<li>
+<p><a href="https://rest.zuora.com/oauth/token" class="bare">https://rest.zuora.com/oauth/token</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>如果您使用的是基于 NetApp NSS 的许可：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://login.netapp.com" class="bare">https://login.netapp.com</a></p>
+</li>
+<li>
+<p><a href="https://login.netapp.com/ms_oauth/oauth2/endpoints" class="bare">https://login.netapp.com/ms_oauth/oauth2/endpoints</a></p>
+</li>
+<li>
+<p><a href="https://login.netapp.com/ms_oauth/oauth2/endpoints/oauthservice/tokens" class="bare">https://login.netapp.com/ms_oauth/oauth2/endpoints/oauthservice/tokens</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>如果您使用的是基于 NetApp 传统的许可：</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="https://talonazuremicroservices.azurewebsites.net" class="bare">https://talonazuremicroservices.azurewebsites.net</a></p>
+</li>
+<li>
+<p><a href="https://talonlicensing.table.core.windows.net" class="bare">https://talonlicensing.table.core.windows.net</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="网络">网络</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>防火墙：应允许在全局文件缓存边缘和核心实例之间使用 TCP 端口。</p>
+</li>
+<li>
+<p>全局文件缓存 TCP 端口： 443 （ HTTPS ）， 6618 – 6630 。</p>
+</li>
+<li>
+<p>必须将网络优化设备（例如 Riverbed Steelhead ）配置为直通全局文件缓存专用端口（ TCP 6618-6630 ）。</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/zh-cn/cloud-manager-file-cache/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">想就我们的网站提供反馈?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">请告诉我们</a>
+  <a href="https://docs.netapp.com/zh-cn/announcements/" class="n-footer__copyright">通知</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/zh-cn/cloud-manager-file-cache/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/zh-cn/cloud-manager-file-cache/js/prism.js'></script>
+      <script type="text/javascript" src='/zh-cn/cloud-manager-file-cache/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/zh-cn/cloud-manager-file-cache/js/www-ntap.js'></script>
+    <script src='/zh-cn/cloud-manager-file-cache/js/tabbed-blocks.js'></script>
+  </body></html>

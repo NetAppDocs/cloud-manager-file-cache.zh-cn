@@ -156,11 +156,8 @@ image:diagram_gfc_image3.png["一个图，显示边缘和核心的全局文件�
 
 == 限制
 
-* Cloud Manager 中支持的全局文件缓存版本要求用作中央存储的后端存储平台必须是一个工作环境，在此环境中，您已在 Azure 或 AWS 中部署了 Cloud Volumes ONTAP 单节点或 HA 对。
-+
+Cloud Manager 中支持的全局文件缓存版本要求用作中央存储的后端存储平台必须是一个工作环境，在此环境中，您已在 Azure 或 AWS 中部署了 Cloud Volumes ONTAP 单节点或 HA 对。
+
 目前，使用 Cloud Manager 不支持其他存储平台和其他云提供商，但可以使用传统部署过程进行部署。
 
-+
 这些其他配置，例如在 Microsoft Azure ， Google Cloud 或 AWS 上使用 Cloud Volumes ONTAP 或 Cloud Volumes Service 的全局文件缓存，仍可通过原有过程获得支持。请参见 link:https://cloud.netapp.com/global-file-cache/onboarding["全局文件缓存概述和入职"^] 了解详细信息。
-
-

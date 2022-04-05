@@ -207,7 +207,6 @@
   <block id="d30bfe96d7c62ab706482cb5c2b4a1ec" category="section-title">设计和部署全局文件缓存边缘</block>
   <block id="5698363b5f7247a6f653aa572ae1cb51" category="paragraph">根据您的要求，您可能需要根据分支机构中的并发用户会话部署一个或多个全局文件缓存边缘实例。Edge 实例将虚拟文件共享呈现给分支机构的最终用户，该实例已从关联的全局文件缓存核心实例透明地扩展。全局文件缓存边缘应包含 `D ： \` NTFS 卷，该卷包含分支机构内的缓存文件。</block>
   <block id="f545daefd1b990207b6063d1a0d100bb" category="inline-link-macro">规模估算准则</block>
-  <block id="a9f922d8715f1a0a77c5687f0cb5aa93" category="admonition">对于全局文件缓存边缘，了解非常重要 <block ref="59a96d2edb633193f59953bdf68d36ab" category="inline-link-macro-rx"></block>。这将有助于您为全局文件缓存部署制定正确的设计。此外，您还需要确定在规模，资源可用性和冗余方面哪些方面适合您的环境。</block>
   <block id="1f01263cf82c613fccc25592d0c644d1" category="section-title">全局文件缓存边缘实例</block>
   <block id="ec0d814add25a4fc3dfc82c64e2a0a25" category="paragraph">部署全局文件缓存边缘实例时，您需要通过部署 Windows Server 2016 Standard 或 Datacenter Edition ， Windows Server 2019 Standard 或 Datacenter Edition 或使用全局文件缓存 ` .OVA` 或 ` .VHD` 模板来配置单个 VM 。 其中包括所选的 Windows Server 操作系统和全局文件缓存软件。</block>
   <block id="8ea62d632a69911dcf193e9803b1195a" category="section-title">快速步骤</block>
@@ -219,7 +218,6 @@
   <block id="b79d82b1580b1c089977036ab5909a2b" category="section-title">全局文件缓存边缘要求</block>
   <block id="dda6766b3822de333933a3770e1ae688" category="paragraph">全球文件缓存边缘旨在支持 Windows Server 2016 和 2019 的所有平台上运行，为企业远程办公室及其他地方提供简化的 IT 。关键是，如果您的现有硬件基础架构，虚拟化或混合 / 公共云环境满足一些基本要求，则几乎可以在每个情况下都部署全局文件缓存。</block>
   <block id="137e4d3e0bc5586af6fc7ca9441511e1" category="inline-link-macro">规模估算准则</block>
-  <block id="4ac6218bd988565bf3ec6d86dd25e5ee" category="paragraph">要使全局文件缓存边缘以最佳状态运行，需要以下硬件和软件资源。有关整体规模估算准则的详细信息，请参见 <block ref="9215c6eb660e6747de22e76d94c0e37f" category="inline-link-macro-rx"></block>。</block>
   <block id="831485d3736514b490af98e2fdcac477" category="section-title">经过加固的服务器设备</block>
   <block id="667527cf2158cc0bb126a5aa3508ed66" category="paragraph">全局文件缓存安装包可在任何 Microsoft Windows Server 实例上创建一个经过加固的软件设备。_Do not Uninstall_ 全局文件缓存软件包。卸载全局文件缓存将影响服务器实例的功能，并且可能需要完全重建服务器实例。</block>
   <block id="976611c38f37696030731d275b8d5432" category="section-title">物理硬件要求</block>
@@ -423,17 +421,12 @@
   <block id="8de20cb9eef18978ba168ebc839695b7" category="paragraph">全局文件缓存核心实例具有极高的可扩展性，建议每个核心同时使用 3 ， 000 个用户。这在很大程度上取决于最常见工作负载的类型和平均文件大小。</block>
   <block id="b878b843693a16500d3da98423bf22b6" category="paragraph">本节所述的前提条件适用于云中安装的组件：全局文件缓存管理服务器和全局文件缓存核心。</block>
   <block id="b51baa22d09e6c9f1931a23ebef6347d" category="paragraph">本节介绍了全局文件缓存边缘前提条件 <block ref="dc13b95521107f0e6174e0d4f00812b4" category="inline-link-macro-rx"></block>。</block>
-  <block id="62cfe6527ad2ad6b51cb8ccaf7bf34f2" category="section-title">Cloud Manager 实例</block>
-  <block id="da853f2b1b70f8830685d4d1ae8096ca" category="inline-link">适用于 Azure 的 Cloud Manager 策略</block>
-  <block id="37d08d548f640449b7f0187fd2333529" category="paragraph">使用适用于 Azure 的 Cloud Volumes ONTAP 作为存储平台时，请确保 Cloud Manager 具有最新所示的权限<block ref="71541056249333863ccd60a02c145e24" category="inline-link-rx"></block>。</block>
-  <block id="d7bcfb31085ad76548d1b7a16fff01fb" category="paragraph">默认情况下，新创建的实例将具有所有所需权限。如果您部署的实例早于 3.8.7 版（ 2020 年 8 月 3 日），则需要添加这些项。</block>
   <block id="891a589deeeaf68084584fbfae4c3ae7" category="section-title">存储平台（卷）</block>
   <block id="e6da02886af47462759989718f62ea49" category="paragraph">在这种情况下，后端存储平台（即已部署的 Cloud Volumes ONTAP 实例）应显示 SMB 文件共享。要通过全局文件缓存公开的任何共享都必须在共享级别允许 Everyone 组完全控制，同时通过 NTFS 权限限制权限。</block>
   <block id="152468376710017819b274fb14a70617" category="paragraph">如果尚未在 Cloud Volumes ONTAP 实例上至少设置一个 SMB 文件共享，则需要准备好以下信息，以便可以在安装期间配置此信息：</block>
   <block id="981640f9fb09fe09a937c7da955d9dfb" category="list-text">Active Directory 域名，名称服务器 IP 地址， Active Directory 管理员凭据。</block>
   <block id="794cb058ebafe2e7b0df56dea2e389d4" category="list-text">要创建的卷的名称和大小，要创建卷的聚合的名称以及共享名称。</block>
   <block id="5a546cf8c7438d3947e0f034bfe5f5af" category="inline-link">管理现有聚合</block>
-  <block id="19bd3fbf3c96e46437e41367e7026677" category="paragraph">建议卷的大小足以容纳应用程序的总数据集，并能够随着数据集的增长相应地进行扩展。如果工作环境中有多个聚合，请参见<block ref="39d18222bad8d4a70367cc75016bb156" category="inline-link-rx"></block> 确定哪个聚合可为新卷提供最多的可用空间。</block>
   <block id="a47494fbd5157213a61c49892644da68" category="paragraph">此全局文件缓存管理服务器需要通过 HTTPS （ TCP 端口 443 ）进行外部访问，才能连接到云提供商订阅服务并访问以下 URL ：</block>
   <block id="224c646ebc1a3e88e1cdb258481bcfd0" category="inline-link"><block ref="224c646ebc1a3e88e1cdb258481bcfd0" category="inline-link-rx"></block></block>
   <block id="f12ef780b481a5c2973143651b98129e" category="list-text"><block ref="f12ef780b481a5c2973143651b98129e" category="inline-link-rx"></block></block>
@@ -534,4 +527,7 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
   <block id="4c7d5d7dfde4a7bd82b54348182043d3" category="sidebar">其他资源</block>
   <block id="cc81b1698333ba727fd5bde305c3cf08" category="sidebar">Cloud Central 用例</block>
+  <block id="c312a13dafd8799651830cedd659bf52" category="admonition">对于全局文件缓存边缘，了解非常重要 <block ref="e948e8be7ddbb6b86ab680f17f3dc3fb" category="inline-link-macro-rx"></block>。这将有助于您为全局文件缓存部署制定正确的设计。此外，您还需要确定在规模，资源可用性和冗余方面哪些方面适合您的环境。</block>
+  <block id="189b29195f2b3701055f4c94a0c1ffad" category="paragraph">要使全局文件缓存边缘以最佳状态运行，需要以下硬件和软件资源。有关整体规模估算准则的详细信息，请参见 <block ref="e948e8be7ddbb6b86ab680f17f3dc3fb" category="inline-link-macro-rx"></block>。</block>
+  <block id="03120f4ae41820e46fabced95a93dbb5" category="paragraph">建议卷的大小足以容纳应用程序的总数据集，并能够随着数据集的增长相应地进行扩展。如果工作环境中有多个聚合，请参见<block ref="acc2071beb330a8d456d30e0940aedbc" category="inline-link-rx"></block> 确定哪个聚合可为新卷提供最多的可用空间。</block>
 </blocks>

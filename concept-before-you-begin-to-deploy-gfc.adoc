@@ -78,26 +78,6 @@ NOTE: 全局文件缓存边缘会检测它是在虚拟实例还是物理实例�
 
 
 
-=== Cloud Manager 实例
-
-使用适用于 Azure 的 Cloud Volumes ONTAP 作为存储平台时，请确保 Cloud Manager 具有最新所示的权限 https://occm-sample-policies.s3.amazonaws.com/Policy_for_cloud_Manager_Azure_3.9.12.json["适用于 Azure 的 Cloud Manager 策略"^]。
-
-默认情况下，新创建的实例将具有所有所需权限。如果您部署的实例早于 3.8.7 版（ 2020 年 8 月 3 日），则需要添加这些项。
-
-[source, json]
-----
-"Microsoft.Resources/deployments/operationStatuses/read",
-"Microsoft.Insights/Metrics/Read",
-"Microsoft.Compute/virtualMachines/extensions/write",
-"Microsoft.Compute/virtualMachines/extensions/read",
-"Microsoft.Compute/virtualMachines/extensions/delete",
-"Microsoft.Compute/virtualMachines/delete",
-"Microsoft.Network/networkInterfaces/delete",
-"Microsoft.Network/networkSecurityGroups/delete",
-"Microsoft.Resources/deployments/delete",
-----
-
-
 === 存储平台（卷）
 
 在这种情况下，后端存储平台（即已部署的 Cloud Volumes ONTAP 实例）应显示 SMB 文件共享。要通过全局文件缓存公开的任何共享都必须在共享级别允许 Everyone 组完全控制，同时通过 NTFS 权限限制权限。
@@ -108,7 +88,7 @@ NOTE: 全局文件缓存边缘会检测它是在虚拟实例还是物理实例�
 * 要创建的卷的名称和大小，要创建卷的聚合的名称以及共享名称。
 
 
-建议卷的大小足以容纳应用程序的总数据集，并能够随着数据集的增长相应地进行扩展。如果工作环境中有多个聚合，请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-storage.html["管理现有聚合"^] 确定哪个聚合可为新卷提供最多的可用空间。
+建议卷的大小足以容纳应用程序的总数据集，并能够随着数据集的增长相应地进行扩展。如果工作环境中有多个聚合，请参见 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-aggregates.html["管理现有聚合"^] 确定哪个聚合可为新卷提供最多的可用空间。
 
 
 

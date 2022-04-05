@@ -52,7 +52,7 @@ https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["�
 根据您的要求，您可能需要根据分支机构中的并发用户会话部署一个或多个全局文件缓存边缘实例。Edge 实例将虚拟文件共享呈现给分支机构的最终用户，该实例已从关联的全局文件缓存核心实例透明地扩展。全局文件缓存边缘应包含 `D ： \` NTFS 卷，该卷包含分支机构内的缓存文件。
 
 
-NOTE: 对于全局文件缓存边缘，了解非常重要 link:concept-before-you-begin-to-deploy-gfc.html#sizing-guidelines["规模估算准则"^]。这将有助于您为全局文件缓存部署制定正确的设计。此外，您还需要确定在规模，资源可用性和冗余方面哪些方面适合您的环境。
+NOTE: 对于全局文件缓存边缘，了解非常重要 link:concept-before-you-begin-to-deploy-gfc.html#sizing-guidelines["规模估算准则"]。这将有助于您为全局文件缓存部署制定正确的设计。此外，您还需要确定在规模，资源可用性和冗余方面哪些方面适合您的环境。
 
 
 

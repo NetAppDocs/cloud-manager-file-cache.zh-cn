@@ -6,6 +6,7 @@ summary: 您可以使用 Cloud Manager 在工作环境中部署全局文件缓�
 ---
 = 入门
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

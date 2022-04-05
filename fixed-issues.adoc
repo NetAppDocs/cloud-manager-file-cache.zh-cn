@@ -6,6 +6,7 @@ summary: 查看全局文件缓存中已修复的问题。
 ---
 = 已修复全局文件缓存中的问题
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

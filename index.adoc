@@ -7,6 +7,7 @@ summary: 使用 NetApp 的智能全局文件缓存为分布式员工实现实时
 ---
 = 全局文件缓存文档
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

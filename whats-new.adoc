@@ -6,6 +6,7 @@ summary: 了解全局文件缓存中的新增功能。
 ---
 = 全局文件缓存的新增功能
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

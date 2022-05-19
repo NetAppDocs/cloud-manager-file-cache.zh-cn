@@ -30,4 +30,4 @@ link:https://docs.netapp.com/us-en/occm/media/Global_File_Cache_Onboarding_Email
 * 入职沟通link:https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%20Customer%20Onboarding%20-%20Draft.docx["Word 文档（ .docx ）"]
 
 
-请参见中的第 13 章 https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^] 以获取其他材料。
+请参见中的第 13 章 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^] 以获取其他材料。

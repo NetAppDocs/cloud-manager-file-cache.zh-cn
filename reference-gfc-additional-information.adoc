@@ -21,7 +21,7 @@ summary: 使用以下链接可了解有关全局文件缓存和其他 NetApp 产
 ** 查看常见问题解答列表 link:https://cloud.netapp.com/global-file-cache-faq["此处"^]
 
 
-* https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^]
+* https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^]
 * NetApp 产品文档
 +
 ** 请参见有关 NetApp 云产品的其他文档 https://docs.netapp.com/us-en/cloud/["此处"^]

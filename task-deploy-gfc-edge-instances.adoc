@@ -130,4 +130,4 @@ NetApp 建议您使用默认安装位置。
 . 安装完成后，根据提示重新启动服务器。
 
 
-有关全局文件缓存边缘高级配置的详细信息，请参见 https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^]。
+有关全局文件缓存边缘高级配置的详细信息，请参见 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^]。

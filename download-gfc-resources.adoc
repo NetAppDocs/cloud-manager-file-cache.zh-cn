@@ -24,17 +24,17 @@ summary: 在远程办公室安装全局文件缓存边缘软件之前，您需�
 
 * Windows Server 2016 虚拟模板：
 +
-https://repo.cloudsync.netapp.com/gfc/2k16_ova_1_2_0-93.zip["包括 NetApp GFC （ VMware vSphere 6.5 及更高版本）的 Windows Server 2016 .OVA"^]
-https://repo.cloudsync.netapp.com/gfc/2k16_vhd_1-2-0-93.zip["包括 NetApp GFC （ Microsoft Hyper-V ）的 Windows Server 2016 .vhdx"^]
+https://repo.cloudsync.netapp.com/gfc/2K16-1_3_0_41.zip["包括 NetApp GFC （ VMware vSphere 6.5 及更高版本）的 Windows Server 2016 .OVA"^]
+https://repo.cloudsync.netapp.com/gfc/2k16_GFC_1_3_0_41IMAGE.zip["包括 NetApp GFC （ Microsoft Hyper-V ）的 Windows Server 2016 .vhdx"^]
 
 * Windows Server 2019 虚拟模板：
 +
-https://repo.cloudsync.netapp.com/gfc/2k19_ova_1_2_0-93.zip["包括 NetApp GFC （ VMware vSphere 6.5 及更高版本）的 Windows Server 2019 .OVA"^]
-https://repo.cloudsync.netapp.com/gfc/2k19_vhd_1-2-0-93.zip["包括 NetApp GFC （ Microsoft Hyper-V ）的 Windows Server 2019 .vhdx"^]
+https://repo.cloudsync.netapp.com/gfc/2K19-1_3_0_41.zip["包括 NetApp GFC （ VMware vSphere 6.5 及更高版本）的 Windows Server 2019 .OVA"^]
+https://repo.cloudsync.netapp.com/gfc/2k19_GFC_1_3_0_41IMAGE.zip["包括 NetApp GFC （ Microsoft Hyper-V ）的 Windows Server 2019 .vhdx"^]
 
 * 全局文件缓存边缘软件：
 +
-https://repo.cloudsync.netapp.com/gfc/GFC-1-2-0-94-Release.exe["NetApp GFC 软件安装包（ .exe ）"^]
+https://repo.cloudsync.netapp.com/gfc/GFC-1-3-0-42-Release.exe["NetApp GFC 软件安装包（ .exe ）"^]
 
 * 全局文件缓存 SCOM （ Microsoft Systems Center Operations Manager ）软件包：
 +
@@ -42,9 +42,11 @@ https://repo.cloudsync.netapp.com/gfc/SCOM-151.zip["NetApp GFC SCOM 管理软件
 
 * 全局文件缓存文档：
 +
-https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》（ .PDF ）"^]
+https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》（ .PDF ）"^]
 
 
+
+link:task-deploy-gfc-edge-instances.html#update-global-file-cache-edge-software["请按照以下步骤操作"] 升级全局文件缓存边缘软件。
 
 
 
@@ -144,7 +146,7 @@ VMware vSphere 6.x 及更高版本：
 
 全局文件缓存智能文件缓存磁盘（ D ： \ ）上的磁盘延迟应为每个并发用户提供小于 0.5 毫秒的平均 I/O 磁盘延迟和 1 MiBps 吞吐量。
 
-有关详细信息，请参见 https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^]。
+有关详细信息，请参见 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^]。
 
 
 
@@ -165,7 +167,7 @@ VMware vSphere 6.x 及更高版本：
 
 为了确保获得最佳体验和性能，请务必遵循《全局文件缓存用户指南》中所述的 Microsoft Windows 客户端要求和最佳实践。此适用场景适用于所有版本的 Microsoft Windows 。
 
-有关详细信息，请参见 https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^]。
+有关详细信息，请参见 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^]。
 
 
 
@@ -173,7 +175,7 @@ VMware vSphere 6.x 及更高版本：
 
 虽然全局文件缓存会尽力验证最常见的防病毒应用程序套件是否与全局文件缓存兼容，但对于这些程序或其相关更新，服务包或修改导致的任何不兼容或性能问题， NetApp 不能提供担保，也不承担任何责任。
 
-全局文件缓存不建议在任何启用了全局文件缓存的实例（核心或边缘）上安装或应用监控或防病毒解决方案。如果是根据选择或策略安装解决方案，则必须应用以下最佳实践和建议。有关常见防病毒套件，请参见中的附录 A https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^]。
+全局文件缓存不建议在任何启用了全局文件缓存的实例（核心或边缘）上安装或应用监控或防病毒解决方案。如果是根据选择或策略安装解决方案，则必须应用以下最佳实践和建议。有关常见防病毒套件，请参见中的附录 A https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^]。
 
 
 
@@ -204,7 +206,7 @@ VMware vSphere 6.x 及更高版本：
 
 NOTE: 向 Edge 设备添加防病毒软件可能会对用户性能产生 10 – 20% 的影响。
 
-有关详细信息，请参见 https://repo.cloudsync.netapp.com/gfc/Netapp%20GFC%20User%20Guide%201.1.0.pdf["《 NetApp 全局文件缓存用户指南》"^]。
+有关详细信息，请参见 https://repo.cloudsync.netapp.com/gfc/Global%20File%20Cache%201.3.0%20User%20Guide.pdf["《 NetApp 全局文件缓存用户指南》"^]。
 
 
 

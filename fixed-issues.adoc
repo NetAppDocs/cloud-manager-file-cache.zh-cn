@@ -18,6 +18,20 @@ summary: 查看全局文件缓存中已修复的问题。
 
 
 
+== 2022年5月19日(版本1.3.0)
+
+* 此时将更新Edge Sync功能的配置UI页面。
+* 修复了通过PowerShell cmdlet同时为多个边缘添加预填充作业时的问题描述 问题。
+* 修复了在LMS Web UI中显示NetApp订阅的显示问题描述。
+* 此时、LMS配置PowerShell脚本将使用TLS 1.2。
+* 修复了TappN中的问题描述 (预填充服务)、并使其能够继续执行作业、尽管此时会发生瞬时断开连接或Tum重新启动。
+* 更新了TappN预填充服务、以便在可用缓存空间降至阈值下限以下时跳过提取文件。
+* 修复了写入跟踪日志时许可证管理器服务器服务(LMS)中的问题描述。
+* 更新了Tum的日志记录基础架构、使其可扩展性更高、性能更高。
+
+
+
+
 == 2021 年 12 月 17 日（版本 1.2.0 ）
 
 * 配置 UI （ Optimus ）经过了增强，可在添加预填充作业时验证日期字段条目。
@@ -25,7 +39,7 @@ summary: 查看全局文件缓存中已修复的问题。
 * 消除了使用策略配置在本地运行的许可证管理服务器（ LMS ）服务的硬依赖关系。
 * GFC 内核驱动程序经过了增强，可避免 Windows Server 2016/2019 中的 SMB 服务器服务崩溃。
 * 修复了 LMS 服务中的异常。
-* LMS ， LMC 和 TappN 服务的服务启动类型从 " 自动延迟 " 更改为 " 自动 " 。
+* License Manager Server Service (LMS)、License Manager Client Service (LMC)和预填充服务(TappN)的服务启动类型将从"Automatic delay"更改为"Automatic"。
 
 
 

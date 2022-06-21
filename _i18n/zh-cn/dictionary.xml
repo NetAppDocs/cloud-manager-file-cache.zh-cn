@@ -397,7 +397,6 @@
   <block id="b8db548470197473b60a31cf63235132" category="list-text">分布式用户 / 全局文件缓存边缘比率</block>
   <block id="03e688bc8022fab0a6352ae303a4c929" category="list-text">分布式用户 / 全局文件缓存核心比率</block>
   <block id="21b98a9bfa32dac32af60fe74c7fc07c" category="section-title">每个核心实例的边缘实例数</block>
-  <block id="b19ff7ea43400c1c390961f4ab3a1b7f" category="paragraph">我们的准则建议，每个全局文件缓存核心实例最多 10 个 Edge 实例，每个全局文件缓存核心实例最多 20 个边缘。这在很大程度上取决于最常见工作负载的类型和平均文件大小。在某些情况下，对于较为常见的工作负载，您可以为每个核心添加更多的边缘实例，但在这些情况下，您应联系 NetApp 支持部门，根据文件集的类型和大小正确调整边缘和核心实例的数量。</block>
   <block id="2df25ab39ccf7d8a937806af504ab29c" category="admonition">您可以同时利用多个全局文件缓存边缘和核心实例根据需求横向扩展基础架构。</block>
   <block id="9aad1322fc19ca5e66c23b65ad4ae5fe" category="section-title">每个 Edge 实例的并发用户数</block>
   <block id="30ae6413ab8cb3af21bb3ef666c57dbe" category="paragraph">全局文件缓存边缘可处理缓存算法和文件级差分方面的繁重工作。一个全局文件缓存边缘实例可为每个专用物理边缘实例最多 400 个用户提供服务，而对于专用虚拟部署，最多可为 200 个用户提供服务。这在很大程度上取决于最常见工作负载的类型和平均文件大小。对于较大的协作文件类型，请引导每个全局文件缓存边缘的最大用户数的 50% 下限（具体取决于物理或虚拟部署）。对于平均文件大小小于 1 MB 的更常见 Office 项目，请参考每个全局文件缓存边缘的 100% 用户上限（具体取决于物理或虚拟部署）。</block>
@@ -486,7 +485,6 @@
   <block id="a314a20204b96ce855b4edecf455498b" category="list-text">入职沟通<block ref="ec13a4ed87a907c97165059568a0b0f6" category="inline-link-macro-rx"></block></block>
   <block id="3c10116b37b407ac79092a38ffb292e4" category="summary">在向 NetApp 技术支持创建支持案例之前，您需要先将 NetApp 支持站点帐户添加到 Cloud Manager 中，然后注册获取支持。</block>
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="doc">注册以获得支持</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">所有 Cloud Manager 文档</block>
   <block id="e0533a7cc48f1b65dc6efe4d93506732" category="sidebar">全局文件缓存文档</block>
   <block id="7d0ee6fed10d3d4e5c9ee496729ab519" category="sidebar">发行说明</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">新增功能</block>
@@ -593,4 +591,5 @@
   <block id="4249aa75e9ea96b2d0d6b440b4f4b8f4" category="paragraph"><block ref="099296b5b160f80a9ee09ffb08be17ae" category="inline-link-macro-rx"></block> 升级全局文件缓存边缘软件。</block>
   <block id="db8e575f29e7264d9dbb628ab57766be" category="paragraph">有关详细信息，请参见<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
   <block id="d9e1cd17d9a7ca15a50e2aaeed2f47c9" category="paragraph">全局文件缓存不建议在任何启用了全局文件缓存的实例（核心或边缘）上安装或应用监控或防病毒解决方案。如果是根据选择或策略安装解决方案，则必须应用以下最佳实践和建议。有关常见防病毒套件，请参见中的附录 A<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
+  <block id="f3abc78aa44d210b1f7b92cda50a64cb" category="paragraph">我们的准则建议，每个全局文件缓存核心实例最多 10 个 Edge 实例，每个全局文件缓存核心实例最多 20 个边缘。这在很大程度上取决于最常见工作负载的类型和平均文件大小。在某些情况下、对于比较常见的工作负载、您可以为每个核心添加更多的边缘实例、但在这种情况下、您应联系您的客户代表、确定如何根据文件集的类型和大小正确调整边缘和核心实例的数量。</block>
 </blocks>

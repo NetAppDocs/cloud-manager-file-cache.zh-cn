@@ -585,11 +585,17 @@
 <block ref="8e4798a9d84286ce2af64cff0824baca" category="inline-link-rx"></block></block>
   <block id="40e4043ab4e9038318e0841ef06244c0" category="paragraph"><block ref="a53645675256480c99fed4a542cb3aca" category="inline-link-rx"></block>
 <block ref="4c2b578017747f1ec201cbd7ab6ca56c" category="inline-link-rx"></block></block>
-  <block id="c1f077f3784bbcdc13bd9524bf4918b7" category="paragraph"><block ref="c1f077f3784bbcdc13bd9524bf4918b7" category="inline-link-rx"></block></block>
   <block id="5621e0035a66f3c4e8f0c7d5fff8a27f" category="paragraph"><block ref="5621e0035a66f3c4e8f0c7d5fff8a27f" category="inline-link-rx"></block></block>
   <block id="e2ed07bb6933c98e532659727830bc52" category="inline-link-macro">请按照以下步骤操作</block>
   <block id="4249aa75e9ea96b2d0d6b440b4f4b8f4" category="paragraph"><block ref="099296b5b160f80a9ee09ffb08be17ae" category="inline-link-macro-rx"></block> 升级全局文件缓存边缘软件。</block>
   <block id="db8e575f29e7264d9dbb628ab57766be" category="paragraph">有关详细信息，请参见<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
   <block id="d9e1cd17d9a7ca15a50e2aaeed2f47c9" category="paragraph">全局文件缓存不建议在任何启用了全局文件缓存的实例（核心或边缘）上安装或应用监控或防病毒解决方案。如果是根据选择或策略安装解决方案，则必须应用以下最佳实践和建议。有关常见防病毒套件，请参见中的附录 A<block ref="e0fe107ca8a95a3de0afb55f5223c6ad" category="inline-link-rx"></block>。</block>
   <block id="f3abc78aa44d210b1f7b92cda50a64cb" category="paragraph">我们的准则建议，每个全局文件缓存核心实例最多 10 个 Edge 实例，每个全局文件缓存核心实例最多 20 个边缘。这在很大程度上取决于最常见工作负载的类型和平均文件大小。在某些情况下、对于比较常见的工作负载、您可以为每个核心添加更多的边缘实例、但在这种情况下、您应联系您的客户代表、确定如何根据文件集的类型和大小正确调整边缘和核心实例的数量。</block>
+  <block id="22c3479f6dd133b2d2d79cc8b481240f" category="section-title">2022年6月23日(版本1.3.1)</block>
+  <block id="a720f7f5208abaac19d4db46d3bc0a7b" category="inline-link">已修复的问题</block>
+  <block id="2ffbf992fae9becab7e787491b2cdf41" category="paragraph">可从获取适用于1.3.1版的Global File Cache Edge软件<block ref="2c81bb98c990e9738e500d000082628f" category="inline-link-rx"></block>。此版本可修复中所述的问题<block ref="11a0d6c8cafa0c0950060c707371e2a0" category="inline-link-rx"></block>。</block>
+  <block id="897b3098cd8a06c0ff8041457079a260" category="paragraph"><block ref="897b3098cd8a06c0ff8041457079a260" category="inline-link-rx"></block></block>
+  <block id="f12e4f9c6c0ea52ff0c85be8308ff143" category="list-text">升级后、未正确安装正确版本的Microsoft可重新分发版本、因此Tum无法启动。已修复GFC安装程序、以安装正确的可重新分发版本。</block>
+  <block id="e4e361b13d8ce3c010df78be535b3aeb" category="list-text">现在、GFC License Manager Service (LMS)将更新配置信息、而不是覆盖此信息。</block>
+  <block id="08b34be098f59c81e94653cf34a7c9ae" category="list-text">现在、配置UI会在升级过程中绑定到正确的System.net.http DLL。</block>
 </blocks>

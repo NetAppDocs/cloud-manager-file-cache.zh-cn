@@ -18,6 +18,12 @@ summary: 了解全局文件缓存中的新增功能。
 
 
 
+== 2022年6月23日(版本1.3.1)
+
+可从获取适用于1.3.1版的Global File Cache Edge软件 https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["此页面"]。此版本可修复中所述的问题 https://docs.netapp.com/us-en/cloud-manager-file-cache/fixed-issues.html["已修复的问题"]。
+
+
+
 == 2022年5月19日(版本1.3.0)
 
 可从获取1.3.0版的全局文件缓存边缘软件 https://docs.netapp.com/us-en/cloud-manager-file-cache/download-gfc-resources.html#download-required-resources["此页面"]。

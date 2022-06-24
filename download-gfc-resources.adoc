@@ -34,7 +34,7 @@ https://repo.cloudsync.netapp.com/gfc/2k19_GFC_1_3_0_41IMAGE.zip["包括 NetApp 
 
 * 全局文件缓存边缘软件：
 +
-https://repo.cloudsync.netapp.com/gfc/GFC-1-3-0-42-Release.exe["NetApp GFC 软件安装包（ .exe ）"^]
+https://repo.cloudsync.netapp.com/gfc/GFC-1-3-1-46-Release.exe["NetApp GFC 软件安装包（ .exe ）"^]
 
 * 全局文件缓存 SCOM （ Microsoft Systems Center Operations Manager ）软件包：
 +
